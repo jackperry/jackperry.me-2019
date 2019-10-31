@@ -4045,10 +4045,11 @@ if (!page('blog')) {
 $("#contact-form").submit(function (e) {
   e.preventDefault();
   var $form = $(this);
-  $form.fadeOut();
+  $form.slideUp();
   $('#form-loading').fadeIn();
   $.post($form.attr("action"), $form.serialize()).then(function () {
-    $('#form-loading').fadeOut();
-    $('#form-success').fadeIn();
+    $('#form-loading').fadeOut('slow', function () {
+      $('#form-success').fadeIn();
+    });
   });
 });
