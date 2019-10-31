@@ -1,0 +1,22 @@
+
+//==========  Links ==========//
+
+.transition {
+    transition: 0.25s color ease-out;
+}
+
+a {
+    @apply no-underline text-nd-purple transition;
+
+    &:not(.btn):hover {
+        @apply text-nd-gradient;
+    }
+}
+
+.bg-nd-gradient {
+    background-image: linear-gradient(to right, config('colors.nd-pink'), config('colors.nd-blue'));
+}
+
+.bg-nd-gradient-reverse {
+    background-image: linear-gradient(to right, config('colors.nd-blue'), config('colors.nd-pink'));
+}

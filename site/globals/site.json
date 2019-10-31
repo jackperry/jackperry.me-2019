@@ -1,0 +1,29 @@
+{
+    "name": "Jack Perry",
+    "url": "https://jackperry.me",
+    "author": {
+        "name": "Jack Perry",
+        "email": "jack@jackperry.me",
+        "handle": "@jckprry",
+        "avatar": "/images/blog/author.jpg"
+    },
+    "images": {
+        "favicon": "/images/favicon.ico",
+        "twitter": "/images/meta/twitter.jpg",
+        "portrait": "/images/portrait.png",
+        "og": "/images/meta/og.jpg"
+    },
+    "work": {
+        "sequoia": "/images/work/sequoia-mark-full-grey.svg",
+        "chirotouch": "/images/work/chirotouch.svg",
+        "stanfordgsb": "/images/work/stanford-gsb-logo.svg",
+        "elastic": "/images/work/logo-elastic.svg",
+        "marketmuscles": "/images/work/logo-marketmuscles.svg",
+        "chartboost": "/images/work/logo-chartboost.png"
+    },
+    "social_links": {
+        "facebook": "https://www.facebook.com",
+        "twitter": "https://www.twitter.com",
+        "linkedin": "https://www.linkedin.com"
+    }
+}

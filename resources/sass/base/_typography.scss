@@ -1,0 +1,38 @@
+
+//==========  Typography ==========//
+
+// headings
+h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight mt-0 mb-6;
+}
+
+// content
+.content {
+
+	// paragraph
+	p {
+		
+
+        // intro paragraph
+		&.intro {
+			@apply border-b border-grey-lighter text-2xl pb-8 mb-0 font-light text-grey-darker;
+
+			@screen md {
+                @apply text-3xl;
+            }
+		}
+    }
+}
+
+
+.text-nd-gradient {
+	background-image: linear-gradient(to right, config('colors.nd-pink'), config('colors.nd-blue'));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-nd-gradient-reverse {
+	background-image: linear-gradient(to right, config('colors.nd-blue'), config('colors.nd-pink'));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
