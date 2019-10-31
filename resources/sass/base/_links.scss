@@ -7,6 +7,7 @@
 
 a {
     @apply no-underline text-nd-purple transition;
+    transition: all 0.2s;
 
     &:not(.btn):hover {
         @apply text-nd-gradient;
@@ -14,7 +15,7 @@ a {
 }
 
 .bg-nd-gradient {
-    background-image: linear-gradient(to right, config('colors.nd-pink'), config('colors.nd-blue'));
+    background-image: linear-gradient(135deg, config('colors.nd-pink'), config('colors.nd-blue'));
 }
 
 .bg-pi-2-pi-gradient-down {
@@ -22,7 +23,7 @@ a {
 }
 
 .bg-nd-gradient-reverse {
-    background-image: linear-gradient(to right, config('colors.nd-blue'), config('colors.nd-pink'));
+    background-image: linear-gradient(135deg, config('colors.nd-blue'), config('colors.nd-pink'));
 }
 
 .btn {
