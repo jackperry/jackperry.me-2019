@@ -11,7 +11,8 @@
         "favicon": "/images/favicon.ico",
         "twitter": "/images/meta/twitter.jpg",
         "portrait": "/images/portrait.png",
-        "og": "/images/meta/og.jpg"
+        "og": "/images/meta/og.jpg",
+        "loading": "images/icons/loading.svg"
     },
     "work": {
         "sequoia": "/images/work/sequoia-mark-full-grey.svg",

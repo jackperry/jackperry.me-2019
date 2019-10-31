@@ -17,6 +17,14 @@ a {
     background-image: linear-gradient(to right, config('colors.nd-pink'), config('colors.nd-blue'));
 }
 
+.bg-pi-2-pi-gradient-down {
+    background-image: linear-gradient(135deg, config('colors.nd-pink'), config('colors.nd-purple'));
+}
+
 .bg-nd-gradient-reverse {
     background-image: linear-gradient(to right, config('colors.nd-blue'), config('colors.nd-pink'));
+}
+
+.btn {
+    transition: all 0.2s;
 }
