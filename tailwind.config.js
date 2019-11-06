@@ -671,9 +671,11 @@ module.exports = {
 
   padding: {
     'px': '1px',
+    '2px': '2px',
     '0': '0',
     '1': '0.25rem',
     '2': '0.5rem',
+    '2p5': '0.625rem',
     '3': '0.75rem',
     '4': '1rem',
     '5': '1.25rem',
@@ -927,7 +929,7 @@ module.exports = {
     opacity: ['responsive'],
     outline: ['focus'],
     overflow: ['responsive'],
-    padding: ['responsive'],
+    padding: ['responsive', 'focus', 'focus-within'],
     pointerEvents: ['responsive'],
     position: ['responsive'],
     resize: ['responsive'],

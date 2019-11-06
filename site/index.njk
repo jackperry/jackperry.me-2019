@@ -104,7 +104,7 @@ title: Hey there, I'm Jack!
 
             <div class="md:flex mb-12" id="contact">
                 <div class="w-full md:w-1/2 py-8 px-4 lg:px-8 items-center flex text-grey-darker text-xl lg:text-3xl text-center">
-                    <p>Born in London but currently making my home in <span class="font-bold"><i class="fas fa-map-marker-alt"></i> Gilroy, California</span>. You can find me sharing my thoughts on <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://twitter.com/jckprry" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>, cats & coffee on <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://www.instagram.com/jackperry/" targe="_blank"><i class="fab fa-instagram"></i> Instagram</a>, and living that developer life on <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://github.com/jackperry" target="_blank"><i class="fab fa-github-alt"></i> GitHub</a> and <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://dev.to/jck" target="_blank"><i class="fab fa-dev"></i> DEV</a>.</p>
+                    <p>Born in London but currently making my home in <span class="font-bold"><i class="fas fa-map-marker-alt"></i> Gilroy, California</span>. You can find me sharing my thoughts on <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://twitter.com/jckprry" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>, cats & coffee on <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://www.instagram.com/jackperry/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>, and living that developer life on <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://github.com/jackperry" target="_blank"><i class="fab fa-github-alt"></i> GitHub</a> and <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://dev.to/jck" target="_blank"><i class="fab fa-dev"></i> DEV</a>.</p>
                 </div>
                 <div class="w-full md:w-1/2 bg-grey-lightest shadow rounded-lg p-8">
                     <h2>Get In Touch</h2>
@@ -113,13 +113,14 @@ title: Hey there, I'm Jack!
 
                     <form name="Contact" id="contact-form" method="POST" data-netlify="true">
                         <label class="block text-sm font-bold uppercase mb-2 px-0" for="name">What's your name?</label>
-                        <input class="bg-white shadow-sm appearance-none border-2 border-transparent w-full lg:w-3/4 rounded py-2 px-4 text-grey-darkest  focus:outline-none focus:border-nd-purple" name="name" type="text">
+                        <span class="inline-block rounded p-2px focus-input-gradient w-full lg:w-3/4"><input class="block bg-white shadow-sm appearance-none border-2 border-transparent w-full rounded py-2 px-4 text-grey-darkest" name="name" placeholder="Your Name" type="text"></span>
 
                         <label class="block text-sm font-bold uppercase mb-2 mt-6 px-0" for="email">How about your email?</label>
-                        <input class="bg-white shadow-sm appearance-none border-2 border-transparent w-full lg:w-4/5 rounded w-4/5 py-2 px-4 text-grey-darkest  focus:outline-none focus:border-nd-purple" name="email" type="email">
+                        <span class="inline-block rounded p-2px focus-input-gradient w-full lg:w-4/5"><input class="block bg-white shadow-sm appearance-none border-2 border-transparent w-full rounded py-2 px-4 text-grey-darkest" name="email" type="email"></span>
 
                         <label class="block text-sm font-bold uppercase mb-2 mt-6 px-0" for="message">So, what can I do for you?</label>
-                        <textarea rows="5" class="bg-white shadow-sm appearance-none border-2 border-transparent w-full rounded py-2 px-4 text-grey-darkest focus:outline-none focus:border-nd-purple" name="message"></textarea>
+                        <span class="inline-block rounded p-2px focus-within:pb-0 focus-input-gradient w-full">
+                        <textarea rows="5" class="bg-white shadow-sm appearance-none border-0 border-transparent w-full rounded py-2 focus:pb-2p5 px-4 text-grey-darkest" name="message"></textarea></span>
 
                         <button type="submit" class="btn rounded mt-4 text-sm uppercase py-3 px-6 shadow hover:shadow-md w-full text-white bg-nd-gradient hover:bg-nd-gradient-reverse font-bold">Send it my way!</button>
                     </form>

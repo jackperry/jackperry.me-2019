@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -554,6 +556,30 @@ h6 {
   background-image: linear-gradient(135deg, #5f97ff, #c538ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+form input {
+  position: relative;
+}
+
+form input:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: linear-gradient(to right, red, orange);
+}
+
+.focus-input-gradient:focus-within {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+  background-image: linear-gradient(135deg, #c538ff, #5f97ff);
 }
 
 .container {
@@ -4429,6 +4455,14 @@ h6 {
   padding: 1px;
 }
 
+.p-2px {
+  padding: 2px;
+}
+
+.p-2p5 {
+  padding: .625rem;
+}
+
 .py-0 {
   padding-top: 0;
   padding-bottom: 0;
@@ -4577,6 +4611,26 @@ h6 {
 .px-px {
   padding-left: 1px;
   padding-right: 1px;
+}
+
+.py-2px {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.px-2px {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.py-2p5 {
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+}
+
+.px-2p5 {
+  padding-left: .625rem;
+  padding-right: .625rem;
 }
 
 .pt-0 {
@@ -4817,6 +4871,1058 @@ h6 {
 
 .pl-px {
   padding-left: 1px;
+}
+
+.pt-2px {
+  padding-top: 2px;
+}
+
+.pr-2px {
+  padding-right: 2px;
+}
+
+.pb-2px {
+  padding-bottom: 2px;
+}
+
+.pl-2px {
+  padding-left: 2px;
+}
+
+.pt-2p5 {
+  padding-top: .625rem;
+}
+
+.pr-2p5 {
+  padding-right: .625rem;
+}
+
+.pb-2p5 {
+  padding-bottom: .625rem;
+}
+
+.pl-2p5 {
+  padding-left: .625rem;
+}
+
+.focus\:p-0:focus {
+  padding: 0;
+}
+
+.focus\:p-1:focus {
+  padding: .25rem;
+}
+
+.focus\:p-2:focus {
+  padding: .5rem;
+}
+
+.focus\:p-3:focus {
+  padding: .75rem;
+}
+
+.focus\:p-4:focus {
+  padding: 1rem;
+}
+
+.focus\:p-5:focus {
+  padding: 1.25rem;
+}
+
+.focus\:p-6:focus {
+  padding: 1.5rem;
+}
+
+.focus\:p-8:focus {
+  padding: 2rem;
+}
+
+.focus\:p-10:focus {
+  padding: 2.5rem;
+}
+
+.focus\:p-12:focus {
+  padding: 3rem;
+}
+
+.focus\:p-16:focus {
+  padding: 4rem;
+}
+
+.focus\:p-20:focus {
+  padding: 5rem;
+}
+
+.focus\:p-24:focus {
+  padding: 6rem;
+}
+
+.focus\:p-32:focus {
+  padding: 8rem;
+}
+
+.focus\:p-px:focus {
+  padding: 1px;
+}
+
+.focus\:p-2px:focus {
+  padding: 2px;
+}
+
+.focus\:p-2p5:focus {
+  padding: .625rem;
+}
+
+.focus\:py-0:focus {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.focus\:px-0:focus {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.focus\:py-1:focus {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+.focus\:px-1:focus {
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+.focus\:py-2:focus {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.focus\:px-2:focus {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.focus\:py-3:focus {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.focus\:px-3:focus {
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+.focus\:py-4:focus {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.focus\:px-4:focus {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.focus\:py-5:focus {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.focus\:px-5:focus {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.focus\:py-6:focus {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.focus\:px-6:focus {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.focus\:py-8:focus {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.focus\:px-8:focus {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.focus\:py-10:focus {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.focus\:px-10:focus {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.focus\:py-12:focus {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.focus\:px-12:focus {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.focus\:py-16:focus {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.focus\:px-16:focus {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.focus\:py-20:focus {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.focus\:px-20:focus {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.focus\:py-24:focus {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.focus\:px-24:focus {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.focus\:py-32:focus {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.focus\:px-32:focus {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.focus\:py-px:focus {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.focus\:px-px:focus {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.focus\:py-2px:focus {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.focus\:px-2px:focus {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.focus\:py-2p5:focus {
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+}
+
+.focus\:px-2p5:focus {
+  padding-left: .625rem;
+  padding-right: .625rem;
+}
+
+.focus\:pt-0:focus {
+  padding-top: 0;
+}
+
+.focus\:pr-0:focus {
+  padding-right: 0;
+}
+
+.focus\:pb-0:focus {
+  padding-bottom: 0;
+}
+
+.focus\:pl-0:focus {
+  padding-left: 0;
+}
+
+.focus\:pt-1:focus {
+  padding-top: .25rem;
+}
+
+.focus\:pr-1:focus {
+  padding-right: .25rem;
+}
+
+.focus\:pb-1:focus {
+  padding-bottom: .25rem;
+}
+
+.focus\:pl-1:focus {
+  padding-left: .25rem;
+}
+
+.focus\:pt-2:focus {
+  padding-top: .5rem;
+}
+
+.focus\:pr-2:focus {
+  padding-right: .5rem;
+}
+
+.focus\:pb-2:focus {
+  padding-bottom: .5rem;
+}
+
+.focus\:pl-2:focus {
+  padding-left: .5rem;
+}
+
+.focus\:pt-3:focus {
+  padding-top: .75rem;
+}
+
+.focus\:pr-3:focus {
+  padding-right: .75rem;
+}
+
+.focus\:pb-3:focus {
+  padding-bottom: .75rem;
+}
+
+.focus\:pl-3:focus {
+  padding-left: .75rem;
+}
+
+.focus\:pt-4:focus {
+  padding-top: 1rem;
+}
+
+.focus\:pr-4:focus {
+  padding-right: 1rem;
+}
+
+.focus\:pb-4:focus {
+  padding-bottom: 1rem;
+}
+
+.focus\:pl-4:focus {
+  padding-left: 1rem;
+}
+
+.focus\:pt-5:focus {
+  padding-top: 1.25rem;
+}
+
+.focus\:pr-5:focus {
+  padding-right: 1.25rem;
+}
+
+.focus\:pb-5:focus {
+  padding-bottom: 1.25rem;
+}
+
+.focus\:pl-5:focus {
+  padding-left: 1.25rem;
+}
+
+.focus\:pt-6:focus {
+  padding-top: 1.5rem;
+}
+
+.focus\:pr-6:focus {
+  padding-right: 1.5rem;
+}
+
+.focus\:pb-6:focus {
+  padding-bottom: 1.5rem;
+}
+
+.focus\:pl-6:focus {
+  padding-left: 1.5rem;
+}
+
+.focus\:pt-8:focus {
+  padding-top: 2rem;
+}
+
+.focus\:pr-8:focus {
+  padding-right: 2rem;
+}
+
+.focus\:pb-8:focus {
+  padding-bottom: 2rem;
+}
+
+.focus\:pl-8:focus {
+  padding-left: 2rem;
+}
+
+.focus\:pt-10:focus {
+  padding-top: 2.5rem;
+}
+
+.focus\:pr-10:focus {
+  padding-right: 2.5rem;
+}
+
+.focus\:pb-10:focus {
+  padding-bottom: 2.5rem;
+}
+
+.focus\:pl-10:focus {
+  padding-left: 2.5rem;
+}
+
+.focus\:pt-12:focus {
+  padding-top: 3rem;
+}
+
+.focus\:pr-12:focus {
+  padding-right: 3rem;
+}
+
+.focus\:pb-12:focus {
+  padding-bottom: 3rem;
+}
+
+.focus\:pl-12:focus {
+  padding-left: 3rem;
+}
+
+.focus\:pt-16:focus {
+  padding-top: 4rem;
+}
+
+.focus\:pr-16:focus {
+  padding-right: 4rem;
+}
+
+.focus\:pb-16:focus {
+  padding-bottom: 4rem;
+}
+
+.focus\:pl-16:focus {
+  padding-left: 4rem;
+}
+
+.focus\:pt-20:focus {
+  padding-top: 5rem;
+}
+
+.focus\:pr-20:focus {
+  padding-right: 5rem;
+}
+
+.focus\:pb-20:focus {
+  padding-bottom: 5rem;
+}
+
+.focus\:pl-20:focus {
+  padding-left: 5rem;
+}
+
+.focus\:pt-24:focus {
+  padding-top: 6rem;
+}
+
+.focus\:pr-24:focus {
+  padding-right: 6rem;
+}
+
+.focus\:pb-24:focus {
+  padding-bottom: 6rem;
+}
+
+.focus\:pl-24:focus {
+  padding-left: 6rem;
+}
+
+.focus\:pt-32:focus {
+  padding-top: 8rem;
+}
+
+.focus\:pr-32:focus {
+  padding-right: 8rem;
+}
+
+.focus\:pb-32:focus {
+  padding-bottom: 8rem;
+}
+
+.focus\:pl-32:focus {
+  padding-left: 8rem;
+}
+
+.focus\:pt-px:focus {
+  padding-top: 1px;
+}
+
+.focus\:pr-px:focus {
+  padding-right: 1px;
+}
+
+.focus\:pb-px:focus {
+  padding-bottom: 1px;
+}
+
+.focus\:pl-px:focus {
+  padding-left: 1px;
+}
+
+.focus\:pt-2px:focus {
+  padding-top: 2px;
+}
+
+.focus\:pr-2px:focus {
+  padding-right: 2px;
+}
+
+.focus\:pb-2px:focus {
+  padding-bottom: 2px;
+}
+
+.focus\:pl-2px:focus {
+  padding-left: 2px;
+}
+
+.focus\:pt-2p5:focus {
+  padding-top: .625rem;
+}
+
+.focus\:pr-2p5:focus {
+  padding-right: .625rem;
+}
+
+.focus\:pb-2p5:focus {
+  padding-bottom: .625rem;
+}
+
+.focus\:pl-2p5:focus {
+  padding-left: .625rem;
+}
+
+.focus-within\:p-0:focus-within {
+  padding: 0;
+}
+
+.focus-within\:p-1:focus-within {
+  padding: .25rem;
+}
+
+.focus-within\:p-2:focus-within {
+  padding: .5rem;
+}
+
+.focus-within\:p-3:focus-within {
+  padding: .75rem;
+}
+
+.focus-within\:p-4:focus-within {
+  padding: 1rem;
+}
+
+.focus-within\:p-5:focus-within {
+  padding: 1.25rem;
+}
+
+.focus-within\:p-6:focus-within {
+  padding: 1.5rem;
+}
+
+.focus-within\:p-8:focus-within {
+  padding: 2rem;
+}
+
+.focus-within\:p-10:focus-within {
+  padding: 2.5rem;
+}
+
+.focus-within\:p-12:focus-within {
+  padding: 3rem;
+}
+
+.focus-within\:p-16:focus-within {
+  padding: 4rem;
+}
+
+.focus-within\:p-20:focus-within {
+  padding: 5rem;
+}
+
+.focus-within\:p-24:focus-within {
+  padding: 6rem;
+}
+
+.focus-within\:p-32:focus-within {
+  padding: 8rem;
+}
+
+.focus-within\:p-px:focus-within {
+  padding: 1px;
+}
+
+.focus-within\:p-2px:focus-within {
+  padding: 2px;
+}
+
+.focus-within\:p-2p5:focus-within {
+  padding: .625rem;
+}
+
+.focus-within\:py-0:focus-within {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.focus-within\:px-0:focus-within {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.focus-within\:py-1:focus-within {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+.focus-within\:px-1:focus-within {
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+.focus-within\:py-2:focus-within {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.focus-within\:px-2:focus-within {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.focus-within\:py-3:focus-within {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.focus-within\:px-3:focus-within {
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+.focus-within\:py-4:focus-within {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.focus-within\:px-4:focus-within {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.focus-within\:py-5:focus-within {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.focus-within\:px-5:focus-within {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.focus-within\:py-6:focus-within {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.focus-within\:px-6:focus-within {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.focus-within\:py-8:focus-within {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.focus-within\:px-8:focus-within {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.focus-within\:py-10:focus-within {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.focus-within\:px-10:focus-within {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.focus-within\:py-12:focus-within {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.focus-within\:px-12:focus-within {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.focus-within\:py-16:focus-within {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.focus-within\:px-16:focus-within {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.focus-within\:py-20:focus-within {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.focus-within\:px-20:focus-within {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.focus-within\:py-24:focus-within {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.focus-within\:px-24:focus-within {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.focus-within\:py-32:focus-within {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.focus-within\:px-32:focus-within {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.focus-within\:py-px:focus-within {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.focus-within\:px-px:focus-within {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.focus-within\:py-2px:focus-within {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.focus-within\:px-2px:focus-within {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.focus-within\:py-2p5:focus-within {
+  padding-top: .625rem;
+  padding-bottom: .625rem;
+}
+
+.focus-within\:px-2p5:focus-within {
+  padding-left: .625rem;
+  padding-right: .625rem;
+}
+
+.focus-within\:pt-0:focus-within {
+  padding-top: 0;
+}
+
+.focus-within\:pr-0:focus-within {
+  padding-right: 0;
+}
+
+.focus-within\:pb-0:focus-within {
+  padding-bottom: 0;
+}
+
+.focus-within\:pl-0:focus-within {
+  padding-left: 0;
+}
+
+.focus-within\:pt-1:focus-within {
+  padding-top: .25rem;
+}
+
+.focus-within\:pr-1:focus-within {
+  padding-right: .25rem;
+}
+
+.focus-within\:pb-1:focus-within {
+  padding-bottom: .25rem;
+}
+
+.focus-within\:pl-1:focus-within {
+  padding-left: .25rem;
+}
+
+.focus-within\:pt-2:focus-within {
+  padding-top: .5rem;
+}
+
+.focus-within\:pr-2:focus-within {
+  padding-right: .5rem;
+}
+
+.focus-within\:pb-2:focus-within {
+  padding-bottom: .5rem;
+}
+
+.focus-within\:pl-2:focus-within {
+  padding-left: .5rem;
+}
+
+.focus-within\:pt-3:focus-within {
+  padding-top: .75rem;
+}
+
+.focus-within\:pr-3:focus-within {
+  padding-right: .75rem;
+}
+
+.focus-within\:pb-3:focus-within {
+  padding-bottom: .75rem;
+}
+
+.focus-within\:pl-3:focus-within {
+  padding-left: .75rem;
+}
+
+.focus-within\:pt-4:focus-within {
+  padding-top: 1rem;
+}
+
+.focus-within\:pr-4:focus-within {
+  padding-right: 1rem;
+}
+
+.focus-within\:pb-4:focus-within {
+  padding-bottom: 1rem;
+}
+
+.focus-within\:pl-4:focus-within {
+  padding-left: 1rem;
+}
+
+.focus-within\:pt-5:focus-within {
+  padding-top: 1.25rem;
+}
+
+.focus-within\:pr-5:focus-within {
+  padding-right: 1.25rem;
+}
+
+.focus-within\:pb-5:focus-within {
+  padding-bottom: 1.25rem;
+}
+
+.focus-within\:pl-5:focus-within {
+  padding-left: 1.25rem;
+}
+
+.focus-within\:pt-6:focus-within {
+  padding-top: 1.5rem;
+}
+
+.focus-within\:pr-6:focus-within {
+  padding-right: 1.5rem;
+}
+
+.focus-within\:pb-6:focus-within {
+  padding-bottom: 1.5rem;
+}
+
+.focus-within\:pl-6:focus-within {
+  padding-left: 1.5rem;
+}
+
+.focus-within\:pt-8:focus-within {
+  padding-top: 2rem;
+}
+
+.focus-within\:pr-8:focus-within {
+  padding-right: 2rem;
+}
+
+.focus-within\:pb-8:focus-within {
+  padding-bottom: 2rem;
+}
+
+.focus-within\:pl-8:focus-within {
+  padding-left: 2rem;
+}
+
+.focus-within\:pt-10:focus-within {
+  padding-top: 2.5rem;
+}
+
+.focus-within\:pr-10:focus-within {
+  padding-right: 2.5rem;
+}
+
+.focus-within\:pb-10:focus-within {
+  padding-bottom: 2.5rem;
+}
+
+.focus-within\:pl-10:focus-within {
+  padding-left: 2.5rem;
+}
+
+.focus-within\:pt-12:focus-within {
+  padding-top: 3rem;
+}
+
+.focus-within\:pr-12:focus-within {
+  padding-right: 3rem;
+}
+
+.focus-within\:pb-12:focus-within {
+  padding-bottom: 3rem;
+}
+
+.focus-within\:pl-12:focus-within {
+  padding-left: 3rem;
+}
+
+.focus-within\:pt-16:focus-within {
+  padding-top: 4rem;
+}
+
+.focus-within\:pr-16:focus-within {
+  padding-right: 4rem;
+}
+
+.focus-within\:pb-16:focus-within {
+  padding-bottom: 4rem;
+}
+
+.focus-within\:pl-16:focus-within {
+  padding-left: 4rem;
+}
+
+.focus-within\:pt-20:focus-within {
+  padding-top: 5rem;
+}
+
+.focus-within\:pr-20:focus-within {
+  padding-right: 5rem;
+}
+
+.focus-within\:pb-20:focus-within {
+  padding-bottom: 5rem;
+}
+
+.focus-within\:pl-20:focus-within {
+  padding-left: 5rem;
+}
+
+.focus-within\:pt-24:focus-within {
+  padding-top: 6rem;
+}
+
+.focus-within\:pr-24:focus-within {
+  padding-right: 6rem;
+}
+
+.focus-within\:pb-24:focus-within {
+  padding-bottom: 6rem;
+}
+
+.focus-within\:pl-24:focus-within {
+  padding-left: 6rem;
+}
+
+.focus-within\:pt-32:focus-within {
+  padding-top: 8rem;
+}
+
+.focus-within\:pr-32:focus-within {
+  padding-right: 8rem;
+}
+
+.focus-within\:pb-32:focus-within {
+  padding-bottom: 8rem;
+}
+
+.focus-within\:pl-32:focus-within {
+  padding-left: 8rem;
+}
+
+.focus-within\:pt-px:focus-within {
+  padding-top: 1px;
+}
+
+.focus-within\:pr-px:focus-within {
+  padding-right: 1px;
+}
+
+.focus-within\:pb-px:focus-within {
+  padding-bottom: 1px;
+}
+
+.focus-within\:pl-px:focus-within {
+  padding-left: 1px;
+}
+
+.focus-within\:pt-2px:focus-within {
+  padding-top: 2px;
+}
+
+.focus-within\:pr-2px:focus-within {
+  padding-right: 2px;
+}
+
+.focus-within\:pb-2px:focus-within {
+  padding-bottom: 2px;
+}
+
+.focus-within\:pl-2px:focus-within {
+  padding-left: 2px;
+}
+
+.focus-within\:pt-2p5:focus-within {
+  padding-top: .625rem;
+}
+
+.focus-within\:pr-2p5:focus-within {
+  padding-right: .625rem;
+}
+
+.focus-within\:pb-2p5:focus-within {
+  padding-bottom: .625rem;
+}
+
+.focus-within\:pl-2p5:focus-within {
+  padding-left: .625rem;
 }
 
 .pointer-events-none {
@@ -10173,6 +11279,14 @@ h6 {
     padding: 1px;
   }
 
+  .sm\:p-2px {
+    padding: 2px;
+  }
+
+  .sm\:p-2p5 {
+    padding: .625rem;
+  }
+
   .sm\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -10321,6 +11435,26 @@ h6 {
   .sm\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .sm\:py-2px {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .sm\:px-2px {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .sm\:py-2p5 {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+
+  .sm\:px-2p5 {
+    padding-left: .625rem;
+    padding-right: .625rem;
   }
 
   .sm\:pt-0 {
@@ -10561,6 +11695,1058 @@ h6 {
 
   .sm\:pl-px {
     padding-left: 1px;
+  }
+
+  .sm\:pt-2px {
+    padding-top: 2px;
+  }
+
+  .sm\:pr-2px {
+    padding-right: 2px;
+  }
+
+  .sm\:pb-2px {
+    padding-bottom: 2px;
+  }
+
+  .sm\:pl-2px {
+    padding-left: 2px;
+  }
+
+  .sm\:pt-2p5 {
+    padding-top: .625rem;
+  }
+
+  .sm\:pr-2p5 {
+    padding-right: .625rem;
+  }
+
+  .sm\:pb-2p5 {
+    padding-bottom: .625rem;
+  }
+
+  .sm\:pl-2p5 {
+    padding-left: .625rem;
+  }
+
+  .sm\:focus\:p-0:focus {
+    padding: 0;
+  }
+
+  .sm\:focus\:p-1:focus {
+    padding: .25rem;
+  }
+
+  .sm\:focus\:p-2:focus {
+    padding: .5rem;
+  }
+
+  .sm\:focus\:p-3:focus {
+    padding: .75rem;
+  }
+
+  .sm\:focus\:p-4:focus {
+    padding: 1rem;
+  }
+
+  .sm\:focus\:p-5:focus {
+    padding: 1.25rem;
+  }
+
+  .sm\:focus\:p-6:focus {
+    padding: 1.5rem;
+  }
+
+  .sm\:focus\:p-8:focus {
+    padding: 2rem;
+  }
+
+  .sm\:focus\:p-10:focus {
+    padding: 2.5rem;
+  }
+
+  .sm\:focus\:p-12:focus {
+    padding: 3rem;
+  }
+
+  .sm\:focus\:p-16:focus {
+    padding: 4rem;
+  }
+
+  .sm\:focus\:p-20:focus {
+    padding: 5rem;
+  }
+
+  .sm\:focus\:p-24:focus {
+    padding: 6rem;
+  }
+
+  .sm\:focus\:p-32:focus {
+    padding: 8rem;
+  }
+
+  .sm\:focus\:p-px:focus {
+    padding: 1px;
+  }
+
+  .sm\:focus\:p-2px:focus {
+    padding: 2px;
+  }
+
+  .sm\:focus\:p-2p5:focus {
+    padding: .625rem;
+  }
+
+  .sm\:focus\:py-0:focus {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .sm\:focus\:px-0:focus {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sm\:focus\:py-1:focus {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+
+  .sm\:focus\:px-1:focus {
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+
+  .sm\:focus\:py-2:focus {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .sm\:focus\:px-2:focus {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .sm\:focus\:py-3:focus {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .sm\:focus\:px-3:focus {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+
+  .sm\:focus\:py-4:focus {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .sm\:focus\:px-4:focus {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sm\:focus\:py-5:focus {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .sm\:focus\:px-5:focus {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .sm\:focus\:py-6:focus {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .sm\:focus\:px-6:focus {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:focus\:py-8:focus {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .sm\:focus\:px-8:focus {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sm\:focus\:py-10:focus {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .sm\:focus\:px-10:focus {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .sm\:focus\:py-12:focus {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .sm\:focus\:px-12:focus {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .sm\:focus\:py-16:focus {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .sm\:focus\:px-16:focus {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .sm\:focus\:py-20:focus {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .sm\:focus\:px-20:focus {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .sm\:focus\:py-24:focus {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .sm\:focus\:px-24:focus {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .sm\:focus\:py-32:focus {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .sm\:focus\:px-32:focus {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .sm\:focus\:py-px:focus {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .sm\:focus\:px-px:focus {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .sm\:focus\:py-2px:focus {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .sm\:focus\:px-2px:focus {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .sm\:focus\:py-2p5:focus {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+
+  .sm\:focus\:px-2p5:focus {
+    padding-left: .625rem;
+    padding-right: .625rem;
+  }
+
+  .sm\:focus\:pt-0:focus {
+    padding-top: 0;
+  }
+
+  .sm\:focus\:pr-0:focus {
+    padding-right: 0;
+  }
+
+  .sm\:focus\:pb-0:focus {
+    padding-bottom: 0;
+  }
+
+  .sm\:focus\:pl-0:focus {
+    padding-left: 0;
+  }
+
+  .sm\:focus\:pt-1:focus {
+    padding-top: .25rem;
+  }
+
+  .sm\:focus\:pr-1:focus {
+    padding-right: .25rem;
+  }
+
+  .sm\:focus\:pb-1:focus {
+    padding-bottom: .25rem;
+  }
+
+  .sm\:focus\:pl-1:focus {
+    padding-left: .25rem;
+  }
+
+  .sm\:focus\:pt-2:focus {
+    padding-top: .5rem;
+  }
+
+  .sm\:focus\:pr-2:focus {
+    padding-right: .5rem;
+  }
+
+  .sm\:focus\:pb-2:focus {
+    padding-bottom: .5rem;
+  }
+
+  .sm\:focus\:pl-2:focus {
+    padding-left: .5rem;
+  }
+
+  .sm\:focus\:pt-3:focus {
+    padding-top: .75rem;
+  }
+
+  .sm\:focus\:pr-3:focus {
+    padding-right: .75rem;
+  }
+
+  .sm\:focus\:pb-3:focus {
+    padding-bottom: .75rem;
+  }
+
+  .sm\:focus\:pl-3:focus {
+    padding-left: .75rem;
+  }
+
+  .sm\:focus\:pt-4:focus {
+    padding-top: 1rem;
+  }
+
+  .sm\:focus\:pr-4:focus {
+    padding-right: 1rem;
+  }
+
+  .sm\:focus\:pb-4:focus {
+    padding-bottom: 1rem;
+  }
+
+  .sm\:focus\:pl-4:focus {
+    padding-left: 1rem;
+  }
+
+  .sm\:focus\:pt-5:focus {
+    padding-top: 1.25rem;
+  }
+
+  .sm\:focus\:pr-5:focus {
+    padding-right: 1.25rem;
+  }
+
+  .sm\:focus\:pb-5:focus {
+    padding-bottom: 1.25rem;
+  }
+
+  .sm\:focus\:pl-5:focus {
+    padding-left: 1.25rem;
+  }
+
+  .sm\:focus\:pt-6:focus {
+    padding-top: 1.5rem;
+  }
+
+  .sm\:focus\:pr-6:focus {
+    padding-right: 1.5rem;
+  }
+
+  .sm\:focus\:pb-6:focus {
+    padding-bottom: 1.5rem;
+  }
+
+  .sm\:focus\:pl-6:focus {
+    padding-left: 1.5rem;
+  }
+
+  .sm\:focus\:pt-8:focus {
+    padding-top: 2rem;
+  }
+
+  .sm\:focus\:pr-8:focus {
+    padding-right: 2rem;
+  }
+
+  .sm\:focus\:pb-8:focus {
+    padding-bottom: 2rem;
+  }
+
+  .sm\:focus\:pl-8:focus {
+    padding-left: 2rem;
+  }
+
+  .sm\:focus\:pt-10:focus {
+    padding-top: 2.5rem;
+  }
+
+  .sm\:focus\:pr-10:focus {
+    padding-right: 2.5rem;
+  }
+
+  .sm\:focus\:pb-10:focus {
+    padding-bottom: 2.5rem;
+  }
+
+  .sm\:focus\:pl-10:focus {
+    padding-left: 2.5rem;
+  }
+
+  .sm\:focus\:pt-12:focus {
+    padding-top: 3rem;
+  }
+
+  .sm\:focus\:pr-12:focus {
+    padding-right: 3rem;
+  }
+
+  .sm\:focus\:pb-12:focus {
+    padding-bottom: 3rem;
+  }
+
+  .sm\:focus\:pl-12:focus {
+    padding-left: 3rem;
+  }
+
+  .sm\:focus\:pt-16:focus {
+    padding-top: 4rem;
+  }
+
+  .sm\:focus\:pr-16:focus {
+    padding-right: 4rem;
+  }
+
+  .sm\:focus\:pb-16:focus {
+    padding-bottom: 4rem;
+  }
+
+  .sm\:focus\:pl-16:focus {
+    padding-left: 4rem;
+  }
+
+  .sm\:focus\:pt-20:focus {
+    padding-top: 5rem;
+  }
+
+  .sm\:focus\:pr-20:focus {
+    padding-right: 5rem;
+  }
+
+  .sm\:focus\:pb-20:focus {
+    padding-bottom: 5rem;
+  }
+
+  .sm\:focus\:pl-20:focus {
+    padding-left: 5rem;
+  }
+
+  .sm\:focus\:pt-24:focus {
+    padding-top: 6rem;
+  }
+
+  .sm\:focus\:pr-24:focus {
+    padding-right: 6rem;
+  }
+
+  .sm\:focus\:pb-24:focus {
+    padding-bottom: 6rem;
+  }
+
+  .sm\:focus\:pl-24:focus {
+    padding-left: 6rem;
+  }
+
+  .sm\:focus\:pt-32:focus {
+    padding-top: 8rem;
+  }
+
+  .sm\:focus\:pr-32:focus {
+    padding-right: 8rem;
+  }
+
+  .sm\:focus\:pb-32:focus {
+    padding-bottom: 8rem;
+  }
+
+  .sm\:focus\:pl-32:focus {
+    padding-left: 8rem;
+  }
+
+  .sm\:focus\:pt-px:focus {
+    padding-top: 1px;
+  }
+
+  .sm\:focus\:pr-px:focus {
+    padding-right: 1px;
+  }
+
+  .sm\:focus\:pb-px:focus {
+    padding-bottom: 1px;
+  }
+
+  .sm\:focus\:pl-px:focus {
+    padding-left: 1px;
+  }
+
+  .sm\:focus\:pt-2px:focus {
+    padding-top: 2px;
+  }
+
+  .sm\:focus\:pr-2px:focus {
+    padding-right: 2px;
+  }
+
+  .sm\:focus\:pb-2px:focus {
+    padding-bottom: 2px;
+  }
+
+  .sm\:focus\:pl-2px:focus {
+    padding-left: 2px;
+  }
+
+  .sm\:focus\:pt-2p5:focus {
+    padding-top: .625rem;
+  }
+
+  .sm\:focus\:pr-2p5:focus {
+    padding-right: .625rem;
+  }
+
+  .sm\:focus\:pb-2p5:focus {
+    padding-bottom: .625rem;
+  }
+
+  .sm\:focus\:pl-2p5:focus {
+    padding-left: .625rem;
+  }
+
+  .sm\:focus-within\:p-0:focus-within {
+    padding: 0;
+  }
+
+  .sm\:focus-within\:p-1:focus-within {
+    padding: .25rem;
+  }
+
+  .sm\:focus-within\:p-2:focus-within {
+    padding: .5rem;
+  }
+
+  .sm\:focus-within\:p-3:focus-within {
+    padding: .75rem;
+  }
+
+  .sm\:focus-within\:p-4:focus-within {
+    padding: 1rem;
+  }
+
+  .sm\:focus-within\:p-5:focus-within {
+    padding: 1.25rem;
+  }
+
+  .sm\:focus-within\:p-6:focus-within {
+    padding: 1.5rem;
+  }
+
+  .sm\:focus-within\:p-8:focus-within {
+    padding: 2rem;
+  }
+
+  .sm\:focus-within\:p-10:focus-within {
+    padding: 2.5rem;
+  }
+
+  .sm\:focus-within\:p-12:focus-within {
+    padding: 3rem;
+  }
+
+  .sm\:focus-within\:p-16:focus-within {
+    padding: 4rem;
+  }
+
+  .sm\:focus-within\:p-20:focus-within {
+    padding: 5rem;
+  }
+
+  .sm\:focus-within\:p-24:focus-within {
+    padding: 6rem;
+  }
+
+  .sm\:focus-within\:p-32:focus-within {
+    padding: 8rem;
+  }
+
+  .sm\:focus-within\:p-px:focus-within {
+    padding: 1px;
+  }
+
+  .sm\:focus-within\:p-2px:focus-within {
+    padding: 2px;
+  }
+
+  .sm\:focus-within\:p-2p5:focus-within {
+    padding: .625rem;
+  }
+
+  .sm\:focus-within\:py-0:focus-within {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .sm\:focus-within\:px-0:focus-within {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sm\:focus-within\:py-1:focus-within {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+
+  .sm\:focus-within\:px-1:focus-within {
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+
+  .sm\:focus-within\:py-2:focus-within {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .sm\:focus-within\:px-2:focus-within {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .sm\:focus-within\:py-3:focus-within {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .sm\:focus-within\:px-3:focus-within {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+
+  .sm\:focus-within\:py-4:focus-within {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .sm\:focus-within\:px-4:focus-within {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sm\:focus-within\:py-5:focus-within {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .sm\:focus-within\:px-5:focus-within {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .sm\:focus-within\:py-6:focus-within {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .sm\:focus-within\:px-6:focus-within {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:focus-within\:py-8:focus-within {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .sm\:focus-within\:px-8:focus-within {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sm\:focus-within\:py-10:focus-within {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .sm\:focus-within\:px-10:focus-within {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .sm\:focus-within\:py-12:focus-within {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .sm\:focus-within\:px-12:focus-within {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .sm\:focus-within\:py-16:focus-within {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .sm\:focus-within\:px-16:focus-within {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .sm\:focus-within\:py-20:focus-within {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .sm\:focus-within\:px-20:focus-within {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .sm\:focus-within\:py-24:focus-within {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .sm\:focus-within\:px-24:focus-within {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .sm\:focus-within\:py-32:focus-within {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .sm\:focus-within\:px-32:focus-within {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .sm\:focus-within\:py-px:focus-within {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .sm\:focus-within\:px-px:focus-within {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .sm\:focus-within\:py-2px:focus-within {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .sm\:focus-within\:px-2px:focus-within {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .sm\:focus-within\:py-2p5:focus-within {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+
+  .sm\:focus-within\:px-2p5:focus-within {
+    padding-left: .625rem;
+    padding-right: .625rem;
+  }
+
+  .sm\:focus-within\:pt-0:focus-within {
+    padding-top: 0;
+  }
+
+  .sm\:focus-within\:pr-0:focus-within {
+    padding-right: 0;
+  }
+
+  .sm\:focus-within\:pb-0:focus-within {
+    padding-bottom: 0;
+  }
+
+  .sm\:focus-within\:pl-0:focus-within {
+    padding-left: 0;
+  }
+
+  .sm\:focus-within\:pt-1:focus-within {
+    padding-top: .25rem;
+  }
+
+  .sm\:focus-within\:pr-1:focus-within {
+    padding-right: .25rem;
+  }
+
+  .sm\:focus-within\:pb-1:focus-within {
+    padding-bottom: .25rem;
+  }
+
+  .sm\:focus-within\:pl-1:focus-within {
+    padding-left: .25rem;
+  }
+
+  .sm\:focus-within\:pt-2:focus-within {
+    padding-top: .5rem;
+  }
+
+  .sm\:focus-within\:pr-2:focus-within {
+    padding-right: .5rem;
+  }
+
+  .sm\:focus-within\:pb-2:focus-within {
+    padding-bottom: .5rem;
+  }
+
+  .sm\:focus-within\:pl-2:focus-within {
+    padding-left: .5rem;
+  }
+
+  .sm\:focus-within\:pt-3:focus-within {
+    padding-top: .75rem;
+  }
+
+  .sm\:focus-within\:pr-3:focus-within {
+    padding-right: .75rem;
+  }
+
+  .sm\:focus-within\:pb-3:focus-within {
+    padding-bottom: .75rem;
+  }
+
+  .sm\:focus-within\:pl-3:focus-within {
+    padding-left: .75rem;
+  }
+
+  .sm\:focus-within\:pt-4:focus-within {
+    padding-top: 1rem;
+  }
+
+  .sm\:focus-within\:pr-4:focus-within {
+    padding-right: 1rem;
+  }
+
+  .sm\:focus-within\:pb-4:focus-within {
+    padding-bottom: 1rem;
+  }
+
+  .sm\:focus-within\:pl-4:focus-within {
+    padding-left: 1rem;
+  }
+
+  .sm\:focus-within\:pt-5:focus-within {
+    padding-top: 1.25rem;
+  }
+
+  .sm\:focus-within\:pr-5:focus-within {
+    padding-right: 1.25rem;
+  }
+
+  .sm\:focus-within\:pb-5:focus-within {
+    padding-bottom: 1.25rem;
+  }
+
+  .sm\:focus-within\:pl-5:focus-within {
+    padding-left: 1.25rem;
+  }
+
+  .sm\:focus-within\:pt-6:focus-within {
+    padding-top: 1.5rem;
+  }
+
+  .sm\:focus-within\:pr-6:focus-within {
+    padding-right: 1.5rem;
+  }
+
+  .sm\:focus-within\:pb-6:focus-within {
+    padding-bottom: 1.5rem;
+  }
+
+  .sm\:focus-within\:pl-6:focus-within {
+    padding-left: 1.5rem;
+  }
+
+  .sm\:focus-within\:pt-8:focus-within {
+    padding-top: 2rem;
+  }
+
+  .sm\:focus-within\:pr-8:focus-within {
+    padding-right: 2rem;
+  }
+
+  .sm\:focus-within\:pb-8:focus-within {
+    padding-bottom: 2rem;
+  }
+
+  .sm\:focus-within\:pl-8:focus-within {
+    padding-left: 2rem;
+  }
+
+  .sm\:focus-within\:pt-10:focus-within {
+    padding-top: 2.5rem;
+  }
+
+  .sm\:focus-within\:pr-10:focus-within {
+    padding-right: 2.5rem;
+  }
+
+  .sm\:focus-within\:pb-10:focus-within {
+    padding-bottom: 2.5rem;
+  }
+
+  .sm\:focus-within\:pl-10:focus-within {
+    padding-left: 2.5rem;
+  }
+
+  .sm\:focus-within\:pt-12:focus-within {
+    padding-top: 3rem;
+  }
+
+  .sm\:focus-within\:pr-12:focus-within {
+    padding-right: 3rem;
+  }
+
+  .sm\:focus-within\:pb-12:focus-within {
+    padding-bottom: 3rem;
+  }
+
+  .sm\:focus-within\:pl-12:focus-within {
+    padding-left: 3rem;
+  }
+
+  .sm\:focus-within\:pt-16:focus-within {
+    padding-top: 4rem;
+  }
+
+  .sm\:focus-within\:pr-16:focus-within {
+    padding-right: 4rem;
+  }
+
+  .sm\:focus-within\:pb-16:focus-within {
+    padding-bottom: 4rem;
+  }
+
+  .sm\:focus-within\:pl-16:focus-within {
+    padding-left: 4rem;
+  }
+
+  .sm\:focus-within\:pt-20:focus-within {
+    padding-top: 5rem;
+  }
+
+  .sm\:focus-within\:pr-20:focus-within {
+    padding-right: 5rem;
+  }
+
+  .sm\:focus-within\:pb-20:focus-within {
+    padding-bottom: 5rem;
+  }
+
+  .sm\:focus-within\:pl-20:focus-within {
+    padding-left: 5rem;
+  }
+
+  .sm\:focus-within\:pt-24:focus-within {
+    padding-top: 6rem;
+  }
+
+  .sm\:focus-within\:pr-24:focus-within {
+    padding-right: 6rem;
+  }
+
+  .sm\:focus-within\:pb-24:focus-within {
+    padding-bottom: 6rem;
+  }
+
+  .sm\:focus-within\:pl-24:focus-within {
+    padding-left: 6rem;
+  }
+
+  .sm\:focus-within\:pt-32:focus-within {
+    padding-top: 8rem;
+  }
+
+  .sm\:focus-within\:pr-32:focus-within {
+    padding-right: 8rem;
+  }
+
+  .sm\:focus-within\:pb-32:focus-within {
+    padding-bottom: 8rem;
+  }
+
+  .sm\:focus-within\:pl-32:focus-within {
+    padding-left: 8rem;
+  }
+
+  .sm\:focus-within\:pt-px:focus-within {
+    padding-top: 1px;
+  }
+
+  .sm\:focus-within\:pr-px:focus-within {
+    padding-right: 1px;
+  }
+
+  .sm\:focus-within\:pb-px:focus-within {
+    padding-bottom: 1px;
+  }
+
+  .sm\:focus-within\:pl-px:focus-within {
+    padding-left: 1px;
+  }
+
+  .sm\:focus-within\:pt-2px:focus-within {
+    padding-top: 2px;
+  }
+
+  .sm\:focus-within\:pr-2px:focus-within {
+    padding-right: 2px;
+  }
+
+  .sm\:focus-within\:pb-2px:focus-within {
+    padding-bottom: 2px;
+  }
+
+  .sm\:focus-within\:pl-2px:focus-within {
+    padding-left: 2px;
+  }
+
+  .sm\:focus-within\:pt-2p5:focus-within {
+    padding-top: .625rem;
+  }
+
+  .sm\:focus-within\:pr-2p5:focus-within {
+    padding-right: .625rem;
+  }
+
+  .sm\:focus-within\:pb-2p5:focus-within {
+    padding-bottom: .625rem;
+  }
+
+  .sm\:focus-within\:pl-2p5:focus-within {
+    padding-left: .625rem;
   }
 
   .sm\:pointer-events-none {
@@ -15910,6 +18096,14 @@ h6 {
     padding: 1px;
   }
 
+  .md\:p-2px {
+    padding: 2px;
+  }
+
+  .md\:p-2p5 {
+    padding: .625rem;
+  }
+
   .md\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -16058,6 +18252,26 @@ h6 {
   .md\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .md\:py-2px {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .md\:px-2px {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .md\:py-2p5 {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+
+  .md\:px-2p5 {
+    padding-left: .625rem;
+    padding-right: .625rem;
   }
 
   .md\:pt-0 {
@@ -16298,6 +18512,1058 @@ h6 {
 
   .md\:pl-px {
     padding-left: 1px;
+  }
+
+  .md\:pt-2px {
+    padding-top: 2px;
+  }
+
+  .md\:pr-2px {
+    padding-right: 2px;
+  }
+
+  .md\:pb-2px {
+    padding-bottom: 2px;
+  }
+
+  .md\:pl-2px {
+    padding-left: 2px;
+  }
+
+  .md\:pt-2p5 {
+    padding-top: .625rem;
+  }
+
+  .md\:pr-2p5 {
+    padding-right: .625rem;
+  }
+
+  .md\:pb-2p5 {
+    padding-bottom: .625rem;
+  }
+
+  .md\:pl-2p5 {
+    padding-left: .625rem;
+  }
+
+  .md\:focus\:p-0:focus {
+    padding: 0;
+  }
+
+  .md\:focus\:p-1:focus {
+    padding: .25rem;
+  }
+
+  .md\:focus\:p-2:focus {
+    padding: .5rem;
+  }
+
+  .md\:focus\:p-3:focus {
+    padding: .75rem;
+  }
+
+  .md\:focus\:p-4:focus {
+    padding: 1rem;
+  }
+
+  .md\:focus\:p-5:focus {
+    padding: 1.25rem;
+  }
+
+  .md\:focus\:p-6:focus {
+    padding: 1.5rem;
+  }
+
+  .md\:focus\:p-8:focus {
+    padding: 2rem;
+  }
+
+  .md\:focus\:p-10:focus {
+    padding: 2.5rem;
+  }
+
+  .md\:focus\:p-12:focus {
+    padding: 3rem;
+  }
+
+  .md\:focus\:p-16:focus {
+    padding: 4rem;
+  }
+
+  .md\:focus\:p-20:focus {
+    padding: 5rem;
+  }
+
+  .md\:focus\:p-24:focus {
+    padding: 6rem;
+  }
+
+  .md\:focus\:p-32:focus {
+    padding: 8rem;
+  }
+
+  .md\:focus\:p-px:focus {
+    padding: 1px;
+  }
+
+  .md\:focus\:p-2px:focus {
+    padding: 2px;
+  }
+
+  .md\:focus\:p-2p5:focus {
+    padding: .625rem;
+  }
+
+  .md\:focus\:py-0:focus {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .md\:focus\:px-0:focus {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .md\:focus\:py-1:focus {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+
+  .md\:focus\:px-1:focus {
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+
+  .md\:focus\:py-2:focus {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .md\:focus\:px-2:focus {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .md\:focus\:py-3:focus {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .md\:focus\:px-3:focus {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+
+  .md\:focus\:py-4:focus {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .md\:focus\:px-4:focus {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:focus\:py-5:focus {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:focus\:px-5:focus {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .md\:focus\:py-6:focus {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:focus\:px-6:focus {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:focus\:py-8:focus {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:focus\:px-8:focus {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:focus\:py-10:focus {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:focus\:px-10:focus {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:focus\:py-12:focus {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .md\:focus\:px-12:focus {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:focus\:py-16:focus {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .md\:focus\:px-16:focus {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:focus\:py-20:focus {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:focus\:px-20:focus {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:focus\:py-24:focus {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .md\:focus\:px-24:focus {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .md\:focus\:py-32:focus {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .md\:focus\:px-32:focus {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .md\:focus\:py-px:focus {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .md\:focus\:px-px:focus {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .md\:focus\:py-2px:focus {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .md\:focus\:px-2px:focus {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .md\:focus\:py-2p5:focus {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+
+  .md\:focus\:px-2p5:focus {
+    padding-left: .625rem;
+    padding-right: .625rem;
+  }
+
+  .md\:focus\:pt-0:focus {
+    padding-top: 0;
+  }
+
+  .md\:focus\:pr-0:focus {
+    padding-right: 0;
+  }
+
+  .md\:focus\:pb-0:focus {
+    padding-bottom: 0;
+  }
+
+  .md\:focus\:pl-0:focus {
+    padding-left: 0;
+  }
+
+  .md\:focus\:pt-1:focus {
+    padding-top: .25rem;
+  }
+
+  .md\:focus\:pr-1:focus {
+    padding-right: .25rem;
+  }
+
+  .md\:focus\:pb-1:focus {
+    padding-bottom: .25rem;
+  }
+
+  .md\:focus\:pl-1:focus {
+    padding-left: .25rem;
+  }
+
+  .md\:focus\:pt-2:focus {
+    padding-top: .5rem;
+  }
+
+  .md\:focus\:pr-2:focus {
+    padding-right: .5rem;
+  }
+
+  .md\:focus\:pb-2:focus {
+    padding-bottom: .5rem;
+  }
+
+  .md\:focus\:pl-2:focus {
+    padding-left: .5rem;
+  }
+
+  .md\:focus\:pt-3:focus {
+    padding-top: .75rem;
+  }
+
+  .md\:focus\:pr-3:focus {
+    padding-right: .75rem;
+  }
+
+  .md\:focus\:pb-3:focus {
+    padding-bottom: .75rem;
+  }
+
+  .md\:focus\:pl-3:focus {
+    padding-left: .75rem;
+  }
+
+  .md\:focus\:pt-4:focus {
+    padding-top: 1rem;
+  }
+
+  .md\:focus\:pr-4:focus {
+    padding-right: 1rem;
+  }
+
+  .md\:focus\:pb-4:focus {
+    padding-bottom: 1rem;
+  }
+
+  .md\:focus\:pl-4:focus {
+    padding-left: 1rem;
+  }
+
+  .md\:focus\:pt-5:focus {
+    padding-top: 1.25rem;
+  }
+
+  .md\:focus\:pr-5:focus {
+    padding-right: 1.25rem;
+  }
+
+  .md\:focus\:pb-5:focus {
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:focus\:pl-5:focus {
+    padding-left: 1.25rem;
+  }
+
+  .md\:focus\:pt-6:focus {
+    padding-top: 1.5rem;
+  }
+
+  .md\:focus\:pr-6:focus {
+    padding-right: 1.5rem;
+  }
+
+  .md\:focus\:pb-6:focus {
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:focus\:pl-6:focus {
+    padding-left: 1.5rem;
+  }
+
+  .md\:focus\:pt-8:focus {
+    padding-top: 2rem;
+  }
+
+  .md\:focus\:pr-8:focus {
+    padding-right: 2rem;
+  }
+
+  .md\:focus\:pb-8:focus {
+    padding-bottom: 2rem;
+  }
+
+  .md\:focus\:pl-8:focus {
+    padding-left: 2rem;
+  }
+
+  .md\:focus\:pt-10:focus {
+    padding-top: 2.5rem;
+  }
+
+  .md\:focus\:pr-10:focus {
+    padding-right: 2.5rem;
+  }
+
+  .md\:focus\:pb-10:focus {
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:focus\:pl-10:focus {
+    padding-left: 2.5rem;
+  }
+
+  .md\:focus\:pt-12:focus {
+    padding-top: 3rem;
+  }
+
+  .md\:focus\:pr-12:focus {
+    padding-right: 3rem;
+  }
+
+  .md\:focus\:pb-12:focus {
+    padding-bottom: 3rem;
+  }
+
+  .md\:focus\:pl-12:focus {
+    padding-left: 3rem;
+  }
+
+  .md\:focus\:pt-16:focus {
+    padding-top: 4rem;
+  }
+
+  .md\:focus\:pr-16:focus {
+    padding-right: 4rem;
+  }
+
+  .md\:focus\:pb-16:focus {
+    padding-bottom: 4rem;
+  }
+
+  .md\:focus\:pl-16:focus {
+    padding-left: 4rem;
+  }
+
+  .md\:focus\:pt-20:focus {
+    padding-top: 5rem;
+  }
+
+  .md\:focus\:pr-20:focus {
+    padding-right: 5rem;
+  }
+
+  .md\:focus\:pb-20:focus {
+    padding-bottom: 5rem;
+  }
+
+  .md\:focus\:pl-20:focus {
+    padding-left: 5rem;
+  }
+
+  .md\:focus\:pt-24:focus {
+    padding-top: 6rem;
+  }
+
+  .md\:focus\:pr-24:focus {
+    padding-right: 6rem;
+  }
+
+  .md\:focus\:pb-24:focus {
+    padding-bottom: 6rem;
+  }
+
+  .md\:focus\:pl-24:focus {
+    padding-left: 6rem;
+  }
+
+  .md\:focus\:pt-32:focus {
+    padding-top: 8rem;
+  }
+
+  .md\:focus\:pr-32:focus {
+    padding-right: 8rem;
+  }
+
+  .md\:focus\:pb-32:focus {
+    padding-bottom: 8rem;
+  }
+
+  .md\:focus\:pl-32:focus {
+    padding-left: 8rem;
+  }
+
+  .md\:focus\:pt-px:focus {
+    padding-top: 1px;
+  }
+
+  .md\:focus\:pr-px:focus {
+    padding-right: 1px;
+  }
+
+  .md\:focus\:pb-px:focus {
+    padding-bottom: 1px;
+  }
+
+  .md\:focus\:pl-px:focus {
+    padding-left: 1px;
+  }
+
+  .md\:focus\:pt-2px:focus {
+    padding-top: 2px;
+  }
+
+  .md\:focus\:pr-2px:focus {
+    padding-right: 2px;
+  }
+
+  .md\:focus\:pb-2px:focus {
+    padding-bottom: 2px;
+  }
+
+  .md\:focus\:pl-2px:focus {
+    padding-left: 2px;
+  }
+
+  .md\:focus\:pt-2p5:focus {
+    padding-top: .625rem;
+  }
+
+  .md\:focus\:pr-2p5:focus {
+    padding-right: .625rem;
+  }
+
+  .md\:focus\:pb-2p5:focus {
+    padding-bottom: .625rem;
+  }
+
+  .md\:focus\:pl-2p5:focus {
+    padding-left: .625rem;
+  }
+
+  .md\:focus-within\:p-0:focus-within {
+    padding: 0;
+  }
+
+  .md\:focus-within\:p-1:focus-within {
+    padding: .25rem;
+  }
+
+  .md\:focus-within\:p-2:focus-within {
+    padding: .5rem;
+  }
+
+  .md\:focus-within\:p-3:focus-within {
+    padding: .75rem;
+  }
+
+  .md\:focus-within\:p-4:focus-within {
+    padding: 1rem;
+  }
+
+  .md\:focus-within\:p-5:focus-within {
+    padding: 1.25rem;
+  }
+
+  .md\:focus-within\:p-6:focus-within {
+    padding: 1.5rem;
+  }
+
+  .md\:focus-within\:p-8:focus-within {
+    padding: 2rem;
+  }
+
+  .md\:focus-within\:p-10:focus-within {
+    padding: 2.5rem;
+  }
+
+  .md\:focus-within\:p-12:focus-within {
+    padding: 3rem;
+  }
+
+  .md\:focus-within\:p-16:focus-within {
+    padding: 4rem;
+  }
+
+  .md\:focus-within\:p-20:focus-within {
+    padding: 5rem;
+  }
+
+  .md\:focus-within\:p-24:focus-within {
+    padding: 6rem;
+  }
+
+  .md\:focus-within\:p-32:focus-within {
+    padding: 8rem;
+  }
+
+  .md\:focus-within\:p-px:focus-within {
+    padding: 1px;
+  }
+
+  .md\:focus-within\:p-2px:focus-within {
+    padding: 2px;
+  }
+
+  .md\:focus-within\:p-2p5:focus-within {
+    padding: .625rem;
+  }
+
+  .md\:focus-within\:py-0:focus-within {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .md\:focus-within\:px-0:focus-within {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .md\:focus-within\:py-1:focus-within {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+
+  .md\:focus-within\:px-1:focus-within {
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+
+  .md\:focus-within\:py-2:focus-within {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .md\:focus-within\:px-2:focus-within {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .md\:focus-within\:py-3:focus-within {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .md\:focus-within\:px-3:focus-within {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+
+  .md\:focus-within\:py-4:focus-within {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .md\:focus-within\:px-4:focus-within {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:focus-within\:py-5:focus-within {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:focus-within\:px-5:focus-within {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .md\:focus-within\:py-6:focus-within {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:focus-within\:px-6:focus-within {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:focus-within\:py-8:focus-within {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:focus-within\:px-8:focus-within {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:focus-within\:py-10:focus-within {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:focus-within\:px-10:focus-within {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:focus-within\:py-12:focus-within {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .md\:focus-within\:px-12:focus-within {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:focus-within\:py-16:focus-within {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .md\:focus-within\:px-16:focus-within {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:focus-within\:py-20:focus-within {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:focus-within\:px-20:focus-within {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:focus-within\:py-24:focus-within {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .md\:focus-within\:px-24:focus-within {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .md\:focus-within\:py-32:focus-within {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .md\:focus-within\:px-32:focus-within {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .md\:focus-within\:py-px:focus-within {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .md\:focus-within\:px-px:focus-within {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .md\:focus-within\:py-2px:focus-within {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .md\:focus-within\:px-2px:focus-within {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .md\:focus-within\:py-2p5:focus-within {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+
+  .md\:focus-within\:px-2p5:focus-within {
+    padding-left: .625rem;
+    padding-right: .625rem;
+  }
+
+  .md\:focus-within\:pt-0:focus-within {
+    padding-top: 0;
+  }
+
+  .md\:focus-within\:pr-0:focus-within {
+    padding-right: 0;
+  }
+
+  .md\:focus-within\:pb-0:focus-within {
+    padding-bottom: 0;
+  }
+
+  .md\:focus-within\:pl-0:focus-within {
+    padding-left: 0;
+  }
+
+  .md\:focus-within\:pt-1:focus-within {
+    padding-top: .25rem;
+  }
+
+  .md\:focus-within\:pr-1:focus-within {
+    padding-right: .25rem;
+  }
+
+  .md\:focus-within\:pb-1:focus-within {
+    padding-bottom: .25rem;
+  }
+
+  .md\:focus-within\:pl-1:focus-within {
+    padding-left: .25rem;
+  }
+
+  .md\:focus-within\:pt-2:focus-within {
+    padding-top: .5rem;
+  }
+
+  .md\:focus-within\:pr-2:focus-within {
+    padding-right: .5rem;
+  }
+
+  .md\:focus-within\:pb-2:focus-within {
+    padding-bottom: .5rem;
+  }
+
+  .md\:focus-within\:pl-2:focus-within {
+    padding-left: .5rem;
+  }
+
+  .md\:focus-within\:pt-3:focus-within {
+    padding-top: .75rem;
+  }
+
+  .md\:focus-within\:pr-3:focus-within {
+    padding-right: .75rem;
+  }
+
+  .md\:focus-within\:pb-3:focus-within {
+    padding-bottom: .75rem;
+  }
+
+  .md\:focus-within\:pl-3:focus-within {
+    padding-left: .75rem;
+  }
+
+  .md\:focus-within\:pt-4:focus-within {
+    padding-top: 1rem;
+  }
+
+  .md\:focus-within\:pr-4:focus-within {
+    padding-right: 1rem;
+  }
+
+  .md\:focus-within\:pb-4:focus-within {
+    padding-bottom: 1rem;
+  }
+
+  .md\:focus-within\:pl-4:focus-within {
+    padding-left: 1rem;
+  }
+
+  .md\:focus-within\:pt-5:focus-within {
+    padding-top: 1.25rem;
+  }
+
+  .md\:focus-within\:pr-5:focus-within {
+    padding-right: 1.25rem;
+  }
+
+  .md\:focus-within\:pb-5:focus-within {
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:focus-within\:pl-5:focus-within {
+    padding-left: 1.25rem;
+  }
+
+  .md\:focus-within\:pt-6:focus-within {
+    padding-top: 1.5rem;
+  }
+
+  .md\:focus-within\:pr-6:focus-within {
+    padding-right: 1.5rem;
+  }
+
+  .md\:focus-within\:pb-6:focus-within {
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:focus-within\:pl-6:focus-within {
+    padding-left: 1.5rem;
+  }
+
+  .md\:focus-within\:pt-8:focus-within {
+    padding-top: 2rem;
+  }
+
+  .md\:focus-within\:pr-8:focus-within {
+    padding-right: 2rem;
+  }
+
+  .md\:focus-within\:pb-8:focus-within {
+    padding-bottom: 2rem;
+  }
+
+  .md\:focus-within\:pl-8:focus-within {
+    padding-left: 2rem;
+  }
+
+  .md\:focus-within\:pt-10:focus-within {
+    padding-top: 2.5rem;
+  }
+
+  .md\:focus-within\:pr-10:focus-within {
+    padding-right: 2.5rem;
+  }
+
+  .md\:focus-within\:pb-10:focus-within {
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:focus-within\:pl-10:focus-within {
+    padding-left: 2.5rem;
+  }
+
+  .md\:focus-within\:pt-12:focus-within {
+    padding-top: 3rem;
+  }
+
+  .md\:focus-within\:pr-12:focus-within {
+    padding-right: 3rem;
+  }
+
+  .md\:focus-within\:pb-12:focus-within {
+    padding-bottom: 3rem;
+  }
+
+  .md\:focus-within\:pl-12:focus-within {
+    padding-left: 3rem;
+  }
+
+  .md\:focus-within\:pt-16:focus-within {
+    padding-top: 4rem;
+  }
+
+  .md\:focus-within\:pr-16:focus-within {
+    padding-right: 4rem;
+  }
+
+  .md\:focus-within\:pb-16:focus-within {
+    padding-bottom: 4rem;
+  }
+
+  .md\:focus-within\:pl-16:focus-within {
+    padding-left: 4rem;
+  }
+
+  .md\:focus-within\:pt-20:focus-within {
+    padding-top: 5rem;
+  }
+
+  .md\:focus-within\:pr-20:focus-within {
+    padding-right: 5rem;
+  }
+
+  .md\:focus-within\:pb-20:focus-within {
+    padding-bottom: 5rem;
+  }
+
+  .md\:focus-within\:pl-20:focus-within {
+    padding-left: 5rem;
+  }
+
+  .md\:focus-within\:pt-24:focus-within {
+    padding-top: 6rem;
+  }
+
+  .md\:focus-within\:pr-24:focus-within {
+    padding-right: 6rem;
+  }
+
+  .md\:focus-within\:pb-24:focus-within {
+    padding-bottom: 6rem;
+  }
+
+  .md\:focus-within\:pl-24:focus-within {
+    padding-left: 6rem;
+  }
+
+  .md\:focus-within\:pt-32:focus-within {
+    padding-top: 8rem;
+  }
+
+  .md\:focus-within\:pr-32:focus-within {
+    padding-right: 8rem;
+  }
+
+  .md\:focus-within\:pb-32:focus-within {
+    padding-bottom: 8rem;
+  }
+
+  .md\:focus-within\:pl-32:focus-within {
+    padding-left: 8rem;
+  }
+
+  .md\:focus-within\:pt-px:focus-within {
+    padding-top: 1px;
+  }
+
+  .md\:focus-within\:pr-px:focus-within {
+    padding-right: 1px;
+  }
+
+  .md\:focus-within\:pb-px:focus-within {
+    padding-bottom: 1px;
+  }
+
+  .md\:focus-within\:pl-px:focus-within {
+    padding-left: 1px;
+  }
+
+  .md\:focus-within\:pt-2px:focus-within {
+    padding-top: 2px;
+  }
+
+  .md\:focus-within\:pr-2px:focus-within {
+    padding-right: 2px;
+  }
+
+  .md\:focus-within\:pb-2px:focus-within {
+    padding-bottom: 2px;
+  }
+
+  .md\:focus-within\:pl-2px:focus-within {
+    padding-left: 2px;
+  }
+
+  .md\:focus-within\:pt-2p5:focus-within {
+    padding-top: .625rem;
+  }
+
+  .md\:focus-within\:pr-2p5:focus-within {
+    padding-right: .625rem;
+  }
+
+  .md\:focus-within\:pb-2p5:focus-within {
+    padding-bottom: .625rem;
+  }
+
+  .md\:focus-within\:pl-2p5:focus-within {
+    padding-left: .625rem;
   }
 
   .md\:pointer-events-none {
@@ -21647,6 +24913,14 @@ h6 {
     padding: 1px;
   }
 
+  .lg\:p-2px {
+    padding: 2px;
+  }
+
+  .lg\:p-2p5 {
+    padding: .625rem;
+  }
+
   .lg\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -21795,6 +25069,26 @@ h6 {
   .lg\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .lg\:py-2px {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .lg\:px-2px {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .lg\:py-2p5 {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+
+  .lg\:px-2p5 {
+    padding-left: .625rem;
+    padding-right: .625rem;
   }
 
   .lg\:pt-0 {
@@ -22035,6 +25329,1058 @@ h6 {
 
   .lg\:pl-px {
     padding-left: 1px;
+  }
+
+  .lg\:pt-2px {
+    padding-top: 2px;
+  }
+
+  .lg\:pr-2px {
+    padding-right: 2px;
+  }
+
+  .lg\:pb-2px {
+    padding-bottom: 2px;
+  }
+
+  .lg\:pl-2px {
+    padding-left: 2px;
+  }
+
+  .lg\:pt-2p5 {
+    padding-top: .625rem;
+  }
+
+  .lg\:pr-2p5 {
+    padding-right: .625rem;
+  }
+
+  .lg\:pb-2p5 {
+    padding-bottom: .625rem;
+  }
+
+  .lg\:pl-2p5 {
+    padding-left: .625rem;
+  }
+
+  .lg\:focus\:p-0:focus {
+    padding: 0;
+  }
+
+  .lg\:focus\:p-1:focus {
+    padding: .25rem;
+  }
+
+  .lg\:focus\:p-2:focus {
+    padding: .5rem;
+  }
+
+  .lg\:focus\:p-3:focus {
+    padding: .75rem;
+  }
+
+  .lg\:focus\:p-4:focus {
+    padding: 1rem;
+  }
+
+  .lg\:focus\:p-5:focus {
+    padding: 1.25rem;
+  }
+
+  .lg\:focus\:p-6:focus {
+    padding: 1.5rem;
+  }
+
+  .lg\:focus\:p-8:focus {
+    padding: 2rem;
+  }
+
+  .lg\:focus\:p-10:focus {
+    padding: 2.5rem;
+  }
+
+  .lg\:focus\:p-12:focus {
+    padding: 3rem;
+  }
+
+  .lg\:focus\:p-16:focus {
+    padding: 4rem;
+  }
+
+  .lg\:focus\:p-20:focus {
+    padding: 5rem;
+  }
+
+  .lg\:focus\:p-24:focus {
+    padding: 6rem;
+  }
+
+  .lg\:focus\:p-32:focus {
+    padding: 8rem;
+  }
+
+  .lg\:focus\:p-px:focus {
+    padding: 1px;
+  }
+
+  .lg\:focus\:p-2px:focus {
+    padding: 2px;
+  }
+
+  .lg\:focus\:p-2p5:focus {
+    padding: .625rem;
+  }
+
+  .lg\:focus\:py-0:focus {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .lg\:focus\:px-0:focus {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .lg\:focus\:py-1:focus {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+
+  .lg\:focus\:px-1:focus {
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+
+  .lg\:focus\:py-2:focus {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .lg\:focus\:px-2:focus {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .lg\:focus\:py-3:focus {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .lg\:focus\:px-3:focus {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+
+  .lg\:focus\:py-4:focus {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .lg\:focus\:px-4:focus {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:focus\:py-5:focus {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .lg\:focus\:px-5:focus {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .lg\:focus\:py-6:focus {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:focus\:px-6:focus {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .lg\:focus\:py-8:focus {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .lg\:focus\:px-8:focus {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:focus\:py-10:focus {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:focus\:px-10:focus {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:focus\:py-12:focus {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .lg\:focus\:px-12:focus {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:focus\:py-16:focus {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:focus\:px-16:focus {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:focus\:py-20:focus {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:focus\:px-20:focus {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:focus\:py-24:focus {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .lg\:focus\:px-24:focus {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .lg\:focus\:py-32:focus {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .lg\:focus\:px-32:focus {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lg\:focus\:py-px:focus {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .lg\:focus\:px-px:focus {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .lg\:focus\:py-2px:focus {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .lg\:focus\:px-2px:focus {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .lg\:focus\:py-2p5:focus {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+
+  .lg\:focus\:px-2p5:focus {
+    padding-left: .625rem;
+    padding-right: .625rem;
+  }
+
+  .lg\:focus\:pt-0:focus {
+    padding-top: 0;
+  }
+
+  .lg\:focus\:pr-0:focus {
+    padding-right: 0;
+  }
+
+  .lg\:focus\:pb-0:focus {
+    padding-bottom: 0;
+  }
+
+  .lg\:focus\:pl-0:focus {
+    padding-left: 0;
+  }
+
+  .lg\:focus\:pt-1:focus {
+    padding-top: .25rem;
+  }
+
+  .lg\:focus\:pr-1:focus {
+    padding-right: .25rem;
+  }
+
+  .lg\:focus\:pb-1:focus {
+    padding-bottom: .25rem;
+  }
+
+  .lg\:focus\:pl-1:focus {
+    padding-left: .25rem;
+  }
+
+  .lg\:focus\:pt-2:focus {
+    padding-top: .5rem;
+  }
+
+  .lg\:focus\:pr-2:focus {
+    padding-right: .5rem;
+  }
+
+  .lg\:focus\:pb-2:focus {
+    padding-bottom: .5rem;
+  }
+
+  .lg\:focus\:pl-2:focus {
+    padding-left: .5rem;
+  }
+
+  .lg\:focus\:pt-3:focus {
+    padding-top: .75rem;
+  }
+
+  .lg\:focus\:pr-3:focus {
+    padding-right: .75rem;
+  }
+
+  .lg\:focus\:pb-3:focus {
+    padding-bottom: .75rem;
+  }
+
+  .lg\:focus\:pl-3:focus {
+    padding-left: .75rem;
+  }
+
+  .lg\:focus\:pt-4:focus {
+    padding-top: 1rem;
+  }
+
+  .lg\:focus\:pr-4:focus {
+    padding-right: 1rem;
+  }
+
+  .lg\:focus\:pb-4:focus {
+    padding-bottom: 1rem;
+  }
+
+  .lg\:focus\:pl-4:focus {
+    padding-left: 1rem;
+  }
+
+  .lg\:focus\:pt-5:focus {
+    padding-top: 1.25rem;
+  }
+
+  .lg\:focus\:pr-5:focus {
+    padding-right: 1.25rem;
+  }
+
+  .lg\:focus\:pb-5:focus {
+    padding-bottom: 1.25rem;
+  }
+
+  .lg\:focus\:pl-5:focus {
+    padding-left: 1.25rem;
+  }
+
+  .lg\:focus\:pt-6:focus {
+    padding-top: 1.5rem;
+  }
+
+  .lg\:focus\:pr-6:focus {
+    padding-right: 1.5rem;
+  }
+
+  .lg\:focus\:pb-6:focus {
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:focus\:pl-6:focus {
+    padding-left: 1.5rem;
+  }
+
+  .lg\:focus\:pt-8:focus {
+    padding-top: 2rem;
+  }
+
+  .lg\:focus\:pr-8:focus {
+    padding-right: 2rem;
+  }
+
+  .lg\:focus\:pb-8:focus {
+    padding-bottom: 2rem;
+  }
+
+  .lg\:focus\:pl-8:focus {
+    padding-left: 2rem;
+  }
+
+  .lg\:focus\:pt-10:focus {
+    padding-top: 2.5rem;
+  }
+
+  .lg\:focus\:pr-10:focus {
+    padding-right: 2.5rem;
+  }
+
+  .lg\:focus\:pb-10:focus {
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:focus\:pl-10:focus {
+    padding-left: 2.5rem;
+  }
+
+  .lg\:focus\:pt-12:focus {
+    padding-top: 3rem;
+  }
+
+  .lg\:focus\:pr-12:focus {
+    padding-right: 3rem;
+  }
+
+  .lg\:focus\:pb-12:focus {
+    padding-bottom: 3rem;
+  }
+
+  .lg\:focus\:pl-12:focus {
+    padding-left: 3rem;
+  }
+
+  .lg\:focus\:pt-16:focus {
+    padding-top: 4rem;
+  }
+
+  .lg\:focus\:pr-16:focus {
+    padding-right: 4rem;
+  }
+
+  .lg\:focus\:pb-16:focus {
+    padding-bottom: 4rem;
+  }
+
+  .lg\:focus\:pl-16:focus {
+    padding-left: 4rem;
+  }
+
+  .lg\:focus\:pt-20:focus {
+    padding-top: 5rem;
+  }
+
+  .lg\:focus\:pr-20:focus {
+    padding-right: 5rem;
+  }
+
+  .lg\:focus\:pb-20:focus {
+    padding-bottom: 5rem;
+  }
+
+  .lg\:focus\:pl-20:focus {
+    padding-left: 5rem;
+  }
+
+  .lg\:focus\:pt-24:focus {
+    padding-top: 6rem;
+  }
+
+  .lg\:focus\:pr-24:focus {
+    padding-right: 6rem;
+  }
+
+  .lg\:focus\:pb-24:focus {
+    padding-bottom: 6rem;
+  }
+
+  .lg\:focus\:pl-24:focus {
+    padding-left: 6rem;
+  }
+
+  .lg\:focus\:pt-32:focus {
+    padding-top: 8rem;
+  }
+
+  .lg\:focus\:pr-32:focus {
+    padding-right: 8rem;
+  }
+
+  .lg\:focus\:pb-32:focus {
+    padding-bottom: 8rem;
+  }
+
+  .lg\:focus\:pl-32:focus {
+    padding-left: 8rem;
+  }
+
+  .lg\:focus\:pt-px:focus {
+    padding-top: 1px;
+  }
+
+  .lg\:focus\:pr-px:focus {
+    padding-right: 1px;
+  }
+
+  .lg\:focus\:pb-px:focus {
+    padding-bottom: 1px;
+  }
+
+  .lg\:focus\:pl-px:focus {
+    padding-left: 1px;
+  }
+
+  .lg\:focus\:pt-2px:focus {
+    padding-top: 2px;
+  }
+
+  .lg\:focus\:pr-2px:focus {
+    padding-right: 2px;
+  }
+
+  .lg\:focus\:pb-2px:focus {
+    padding-bottom: 2px;
+  }
+
+  .lg\:focus\:pl-2px:focus {
+    padding-left: 2px;
+  }
+
+  .lg\:focus\:pt-2p5:focus {
+    padding-top: .625rem;
+  }
+
+  .lg\:focus\:pr-2p5:focus {
+    padding-right: .625rem;
+  }
+
+  .lg\:focus\:pb-2p5:focus {
+    padding-bottom: .625rem;
+  }
+
+  .lg\:focus\:pl-2p5:focus {
+    padding-left: .625rem;
+  }
+
+  .lg\:focus-within\:p-0:focus-within {
+    padding: 0;
+  }
+
+  .lg\:focus-within\:p-1:focus-within {
+    padding: .25rem;
+  }
+
+  .lg\:focus-within\:p-2:focus-within {
+    padding: .5rem;
+  }
+
+  .lg\:focus-within\:p-3:focus-within {
+    padding: .75rem;
+  }
+
+  .lg\:focus-within\:p-4:focus-within {
+    padding: 1rem;
+  }
+
+  .lg\:focus-within\:p-5:focus-within {
+    padding: 1.25rem;
+  }
+
+  .lg\:focus-within\:p-6:focus-within {
+    padding: 1.5rem;
+  }
+
+  .lg\:focus-within\:p-8:focus-within {
+    padding: 2rem;
+  }
+
+  .lg\:focus-within\:p-10:focus-within {
+    padding: 2.5rem;
+  }
+
+  .lg\:focus-within\:p-12:focus-within {
+    padding: 3rem;
+  }
+
+  .lg\:focus-within\:p-16:focus-within {
+    padding: 4rem;
+  }
+
+  .lg\:focus-within\:p-20:focus-within {
+    padding: 5rem;
+  }
+
+  .lg\:focus-within\:p-24:focus-within {
+    padding: 6rem;
+  }
+
+  .lg\:focus-within\:p-32:focus-within {
+    padding: 8rem;
+  }
+
+  .lg\:focus-within\:p-px:focus-within {
+    padding: 1px;
+  }
+
+  .lg\:focus-within\:p-2px:focus-within {
+    padding: 2px;
+  }
+
+  .lg\:focus-within\:p-2p5:focus-within {
+    padding: .625rem;
+  }
+
+  .lg\:focus-within\:py-0:focus-within {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .lg\:focus-within\:px-0:focus-within {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .lg\:focus-within\:py-1:focus-within {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+
+  .lg\:focus-within\:px-1:focus-within {
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+
+  .lg\:focus-within\:py-2:focus-within {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .lg\:focus-within\:px-2:focus-within {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .lg\:focus-within\:py-3:focus-within {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .lg\:focus-within\:px-3:focus-within {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+
+  .lg\:focus-within\:py-4:focus-within {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .lg\:focus-within\:px-4:focus-within {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:focus-within\:py-5:focus-within {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .lg\:focus-within\:px-5:focus-within {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .lg\:focus-within\:py-6:focus-within {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:focus-within\:px-6:focus-within {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .lg\:focus-within\:py-8:focus-within {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .lg\:focus-within\:px-8:focus-within {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:focus-within\:py-10:focus-within {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:focus-within\:px-10:focus-within {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:focus-within\:py-12:focus-within {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .lg\:focus-within\:px-12:focus-within {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:focus-within\:py-16:focus-within {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:focus-within\:px-16:focus-within {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:focus-within\:py-20:focus-within {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:focus-within\:px-20:focus-within {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:focus-within\:py-24:focus-within {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .lg\:focus-within\:px-24:focus-within {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .lg\:focus-within\:py-32:focus-within {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .lg\:focus-within\:px-32:focus-within {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lg\:focus-within\:py-px:focus-within {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .lg\:focus-within\:px-px:focus-within {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .lg\:focus-within\:py-2px:focus-within {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .lg\:focus-within\:px-2px:focus-within {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .lg\:focus-within\:py-2p5:focus-within {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+
+  .lg\:focus-within\:px-2p5:focus-within {
+    padding-left: .625rem;
+    padding-right: .625rem;
+  }
+
+  .lg\:focus-within\:pt-0:focus-within {
+    padding-top: 0;
+  }
+
+  .lg\:focus-within\:pr-0:focus-within {
+    padding-right: 0;
+  }
+
+  .lg\:focus-within\:pb-0:focus-within {
+    padding-bottom: 0;
+  }
+
+  .lg\:focus-within\:pl-0:focus-within {
+    padding-left: 0;
+  }
+
+  .lg\:focus-within\:pt-1:focus-within {
+    padding-top: .25rem;
+  }
+
+  .lg\:focus-within\:pr-1:focus-within {
+    padding-right: .25rem;
+  }
+
+  .lg\:focus-within\:pb-1:focus-within {
+    padding-bottom: .25rem;
+  }
+
+  .lg\:focus-within\:pl-1:focus-within {
+    padding-left: .25rem;
+  }
+
+  .lg\:focus-within\:pt-2:focus-within {
+    padding-top: .5rem;
+  }
+
+  .lg\:focus-within\:pr-2:focus-within {
+    padding-right: .5rem;
+  }
+
+  .lg\:focus-within\:pb-2:focus-within {
+    padding-bottom: .5rem;
+  }
+
+  .lg\:focus-within\:pl-2:focus-within {
+    padding-left: .5rem;
+  }
+
+  .lg\:focus-within\:pt-3:focus-within {
+    padding-top: .75rem;
+  }
+
+  .lg\:focus-within\:pr-3:focus-within {
+    padding-right: .75rem;
+  }
+
+  .lg\:focus-within\:pb-3:focus-within {
+    padding-bottom: .75rem;
+  }
+
+  .lg\:focus-within\:pl-3:focus-within {
+    padding-left: .75rem;
+  }
+
+  .lg\:focus-within\:pt-4:focus-within {
+    padding-top: 1rem;
+  }
+
+  .lg\:focus-within\:pr-4:focus-within {
+    padding-right: 1rem;
+  }
+
+  .lg\:focus-within\:pb-4:focus-within {
+    padding-bottom: 1rem;
+  }
+
+  .lg\:focus-within\:pl-4:focus-within {
+    padding-left: 1rem;
+  }
+
+  .lg\:focus-within\:pt-5:focus-within {
+    padding-top: 1.25rem;
+  }
+
+  .lg\:focus-within\:pr-5:focus-within {
+    padding-right: 1.25rem;
+  }
+
+  .lg\:focus-within\:pb-5:focus-within {
+    padding-bottom: 1.25rem;
+  }
+
+  .lg\:focus-within\:pl-5:focus-within {
+    padding-left: 1.25rem;
+  }
+
+  .lg\:focus-within\:pt-6:focus-within {
+    padding-top: 1.5rem;
+  }
+
+  .lg\:focus-within\:pr-6:focus-within {
+    padding-right: 1.5rem;
+  }
+
+  .lg\:focus-within\:pb-6:focus-within {
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:focus-within\:pl-6:focus-within {
+    padding-left: 1.5rem;
+  }
+
+  .lg\:focus-within\:pt-8:focus-within {
+    padding-top: 2rem;
+  }
+
+  .lg\:focus-within\:pr-8:focus-within {
+    padding-right: 2rem;
+  }
+
+  .lg\:focus-within\:pb-8:focus-within {
+    padding-bottom: 2rem;
+  }
+
+  .lg\:focus-within\:pl-8:focus-within {
+    padding-left: 2rem;
+  }
+
+  .lg\:focus-within\:pt-10:focus-within {
+    padding-top: 2.5rem;
+  }
+
+  .lg\:focus-within\:pr-10:focus-within {
+    padding-right: 2.5rem;
+  }
+
+  .lg\:focus-within\:pb-10:focus-within {
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:focus-within\:pl-10:focus-within {
+    padding-left: 2.5rem;
+  }
+
+  .lg\:focus-within\:pt-12:focus-within {
+    padding-top: 3rem;
+  }
+
+  .lg\:focus-within\:pr-12:focus-within {
+    padding-right: 3rem;
+  }
+
+  .lg\:focus-within\:pb-12:focus-within {
+    padding-bottom: 3rem;
+  }
+
+  .lg\:focus-within\:pl-12:focus-within {
+    padding-left: 3rem;
+  }
+
+  .lg\:focus-within\:pt-16:focus-within {
+    padding-top: 4rem;
+  }
+
+  .lg\:focus-within\:pr-16:focus-within {
+    padding-right: 4rem;
+  }
+
+  .lg\:focus-within\:pb-16:focus-within {
+    padding-bottom: 4rem;
+  }
+
+  .lg\:focus-within\:pl-16:focus-within {
+    padding-left: 4rem;
+  }
+
+  .lg\:focus-within\:pt-20:focus-within {
+    padding-top: 5rem;
+  }
+
+  .lg\:focus-within\:pr-20:focus-within {
+    padding-right: 5rem;
+  }
+
+  .lg\:focus-within\:pb-20:focus-within {
+    padding-bottom: 5rem;
+  }
+
+  .lg\:focus-within\:pl-20:focus-within {
+    padding-left: 5rem;
+  }
+
+  .lg\:focus-within\:pt-24:focus-within {
+    padding-top: 6rem;
+  }
+
+  .lg\:focus-within\:pr-24:focus-within {
+    padding-right: 6rem;
+  }
+
+  .lg\:focus-within\:pb-24:focus-within {
+    padding-bottom: 6rem;
+  }
+
+  .lg\:focus-within\:pl-24:focus-within {
+    padding-left: 6rem;
+  }
+
+  .lg\:focus-within\:pt-32:focus-within {
+    padding-top: 8rem;
+  }
+
+  .lg\:focus-within\:pr-32:focus-within {
+    padding-right: 8rem;
+  }
+
+  .lg\:focus-within\:pb-32:focus-within {
+    padding-bottom: 8rem;
+  }
+
+  .lg\:focus-within\:pl-32:focus-within {
+    padding-left: 8rem;
+  }
+
+  .lg\:focus-within\:pt-px:focus-within {
+    padding-top: 1px;
+  }
+
+  .lg\:focus-within\:pr-px:focus-within {
+    padding-right: 1px;
+  }
+
+  .lg\:focus-within\:pb-px:focus-within {
+    padding-bottom: 1px;
+  }
+
+  .lg\:focus-within\:pl-px:focus-within {
+    padding-left: 1px;
+  }
+
+  .lg\:focus-within\:pt-2px:focus-within {
+    padding-top: 2px;
+  }
+
+  .lg\:focus-within\:pr-2px:focus-within {
+    padding-right: 2px;
+  }
+
+  .lg\:focus-within\:pb-2px:focus-within {
+    padding-bottom: 2px;
+  }
+
+  .lg\:focus-within\:pl-2px:focus-within {
+    padding-left: 2px;
+  }
+
+  .lg\:focus-within\:pt-2p5:focus-within {
+    padding-top: .625rem;
+  }
+
+  .lg\:focus-within\:pr-2p5:focus-within {
+    padding-right: .625rem;
+  }
+
+  .lg\:focus-within\:pb-2p5:focus-within {
+    padding-bottom: .625rem;
+  }
+
+  .lg\:focus-within\:pl-2p5:focus-within {
+    padding-left: .625rem;
   }
 
   .lg\:pointer-events-none {
@@ -27384,6 +31730,14 @@ h6 {
     padding: 1px;
   }
 
+  .xl\:p-2px {
+    padding: 2px;
+  }
+
+  .xl\:p-2p5 {
+    padding: .625rem;
+  }
+
   .xl\:py-0 {
     padding-top: 0;
     padding-bottom: 0;
@@ -27532,6 +31886,26 @@ h6 {
   .xl\:px-px {
     padding-left: 1px;
     padding-right: 1px;
+  }
+
+  .xl\:py-2px {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .xl\:px-2px {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .xl\:py-2p5 {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+
+  .xl\:px-2p5 {
+    padding-left: .625rem;
+    padding-right: .625rem;
   }
 
   .xl\:pt-0 {
@@ -27772,6 +32146,1058 @@ h6 {
 
   .xl\:pl-px {
     padding-left: 1px;
+  }
+
+  .xl\:pt-2px {
+    padding-top: 2px;
+  }
+
+  .xl\:pr-2px {
+    padding-right: 2px;
+  }
+
+  .xl\:pb-2px {
+    padding-bottom: 2px;
+  }
+
+  .xl\:pl-2px {
+    padding-left: 2px;
+  }
+
+  .xl\:pt-2p5 {
+    padding-top: .625rem;
+  }
+
+  .xl\:pr-2p5 {
+    padding-right: .625rem;
+  }
+
+  .xl\:pb-2p5 {
+    padding-bottom: .625rem;
+  }
+
+  .xl\:pl-2p5 {
+    padding-left: .625rem;
+  }
+
+  .xl\:focus\:p-0:focus {
+    padding: 0;
+  }
+
+  .xl\:focus\:p-1:focus {
+    padding: .25rem;
+  }
+
+  .xl\:focus\:p-2:focus {
+    padding: .5rem;
+  }
+
+  .xl\:focus\:p-3:focus {
+    padding: .75rem;
+  }
+
+  .xl\:focus\:p-4:focus {
+    padding: 1rem;
+  }
+
+  .xl\:focus\:p-5:focus {
+    padding: 1.25rem;
+  }
+
+  .xl\:focus\:p-6:focus {
+    padding: 1.5rem;
+  }
+
+  .xl\:focus\:p-8:focus {
+    padding: 2rem;
+  }
+
+  .xl\:focus\:p-10:focus {
+    padding: 2.5rem;
+  }
+
+  .xl\:focus\:p-12:focus {
+    padding: 3rem;
+  }
+
+  .xl\:focus\:p-16:focus {
+    padding: 4rem;
+  }
+
+  .xl\:focus\:p-20:focus {
+    padding: 5rem;
+  }
+
+  .xl\:focus\:p-24:focus {
+    padding: 6rem;
+  }
+
+  .xl\:focus\:p-32:focus {
+    padding: 8rem;
+  }
+
+  .xl\:focus\:p-px:focus {
+    padding: 1px;
+  }
+
+  .xl\:focus\:p-2px:focus {
+    padding: 2px;
+  }
+
+  .xl\:focus\:p-2p5:focus {
+    padding: .625rem;
+  }
+
+  .xl\:focus\:py-0:focus {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .xl\:focus\:px-0:focus {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .xl\:focus\:py-1:focus {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+
+  .xl\:focus\:px-1:focus {
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+
+  .xl\:focus\:py-2:focus {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .xl\:focus\:px-2:focus {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .xl\:focus\:py-3:focus {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .xl\:focus\:px-3:focus {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+
+  .xl\:focus\:py-4:focus {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .xl\:focus\:px-4:focus {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .xl\:focus\:py-5:focus {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .xl\:focus\:px-5:focus {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .xl\:focus\:py-6:focus {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:focus\:px-6:focus {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .xl\:focus\:py-8:focus {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .xl\:focus\:px-8:focus {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .xl\:focus\:py-10:focus {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .xl\:focus\:px-10:focus {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .xl\:focus\:py-12:focus {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .xl\:focus\:px-12:focus {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .xl\:focus\:py-16:focus {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .xl\:focus\:px-16:focus {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xl\:focus\:py-20:focus {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .xl\:focus\:px-20:focus {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .xl\:focus\:py-24:focus {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .xl\:focus\:px-24:focus {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .xl\:focus\:py-32:focus {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .xl\:focus\:px-32:focus {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .xl\:focus\:py-px:focus {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .xl\:focus\:px-px:focus {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .xl\:focus\:py-2px:focus {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .xl\:focus\:px-2px:focus {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .xl\:focus\:py-2p5:focus {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+
+  .xl\:focus\:px-2p5:focus {
+    padding-left: .625rem;
+    padding-right: .625rem;
+  }
+
+  .xl\:focus\:pt-0:focus {
+    padding-top: 0;
+  }
+
+  .xl\:focus\:pr-0:focus {
+    padding-right: 0;
+  }
+
+  .xl\:focus\:pb-0:focus {
+    padding-bottom: 0;
+  }
+
+  .xl\:focus\:pl-0:focus {
+    padding-left: 0;
+  }
+
+  .xl\:focus\:pt-1:focus {
+    padding-top: .25rem;
+  }
+
+  .xl\:focus\:pr-1:focus {
+    padding-right: .25rem;
+  }
+
+  .xl\:focus\:pb-1:focus {
+    padding-bottom: .25rem;
+  }
+
+  .xl\:focus\:pl-1:focus {
+    padding-left: .25rem;
+  }
+
+  .xl\:focus\:pt-2:focus {
+    padding-top: .5rem;
+  }
+
+  .xl\:focus\:pr-2:focus {
+    padding-right: .5rem;
+  }
+
+  .xl\:focus\:pb-2:focus {
+    padding-bottom: .5rem;
+  }
+
+  .xl\:focus\:pl-2:focus {
+    padding-left: .5rem;
+  }
+
+  .xl\:focus\:pt-3:focus {
+    padding-top: .75rem;
+  }
+
+  .xl\:focus\:pr-3:focus {
+    padding-right: .75rem;
+  }
+
+  .xl\:focus\:pb-3:focus {
+    padding-bottom: .75rem;
+  }
+
+  .xl\:focus\:pl-3:focus {
+    padding-left: .75rem;
+  }
+
+  .xl\:focus\:pt-4:focus {
+    padding-top: 1rem;
+  }
+
+  .xl\:focus\:pr-4:focus {
+    padding-right: 1rem;
+  }
+
+  .xl\:focus\:pb-4:focus {
+    padding-bottom: 1rem;
+  }
+
+  .xl\:focus\:pl-4:focus {
+    padding-left: 1rem;
+  }
+
+  .xl\:focus\:pt-5:focus {
+    padding-top: 1.25rem;
+  }
+
+  .xl\:focus\:pr-5:focus {
+    padding-right: 1.25rem;
+  }
+
+  .xl\:focus\:pb-5:focus {
+    padding-bottom: 1.25rem;
+  }
+
+  .xl\:focus\:pl-5:focus {
+    padding-left: 1.25rem;
+  }
+
+  .xl\:focus\:pt-6:focus {
+    padding-top: 1.5rem;
+  }
+
+  .xl\:focus\:pr-6:focus {
+    padding-right: 1.5rem;
+  }
+
+  .xl\:focus\:pb-6:focus {
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:focus\:pl-6:focus {
+    padding-left: 1.5rem;
+  }
+
+  .xl\:focus\:pt-8:focus {
+    padding-top: 2rem;
+  }
+
+  .xl\:focus\:pr-8:focus {
+    padding-right: 2rem;
+  }
+
+  .xl\:focus\:pb-8:focus {
+    padding-bottom: 2rem;
+  }
+
+  .xl\:focus\:pl-8:focus {
+    padding-left: 2rem;
+  }
+
+  .xl\:focus\:pt-10:focus {
+    padding-top: 2.5rem;
+  }
+
+  .xl\:focus\:pr-10:focus {
+    padding-right: 2.5rem;
+  }
+
+  .xl\:focus\:pb-10:focus {
+    padding-bottom: 2.5rem;
+  }
+
+  .xl\:focus\:pl-10:focus {
+    padding-left: 2.5rem;
+  }
+
+  .xl\:focus\:pt-12:focus {
+    padding-top: 3rem;
+  }
+
+  .xl\:focus\:pr-12:focus {
+    padding-right: 3rem;
+  }
+
+  .xl\:focus\:pb-12:focus {
+    padding-bottom: 3rem;
+  }
+
+  .xl\:focus\:pl-12:focus {
+    padding-left: 3rem;
+  }
+
+  .xl\:focus\:pt-16:focus {
+    padding-top: 4rem;
+  }
+
+  .xl\:focus\:pr-16:focus {
+    padding-right: 4rem;
+  }
+
+  .xl\:focus\:pb-16:focus {
+    padding-bottom: 4rem;
+  }
+
+  .xl\:focus\:pl-16:focus {
+    padding-left: 4rem;
+  }
+
+  .xl\:focus\:pt-20:focus {
+    padding-top: 5rem;
+  }
+
+  .xl\:focus\:pr-20:focus {
+    padding-right: 5rem;
+  }
+
+  .xl\:focus\:pb-20:focus {
+    padding-bottom: 5rem;
+  }
+
+  .xl\:focus\:pl-20:focus {
+    padding-left: 5rem;
+  }
+
+  .xl\:focus\:pt-24:focus {
+    padding-top: 6rem;
+  }
+
+  .xl\:focus\:pr-24:focus {
+    padding-right: 6rem;
+  }
+
+  .xl\:focus\:pb-24:focus {
+    padding-bottom: 6rem;
+  }
+
+  .xl\:focus\:pl-24:focus {
+    padding-left: 6rem;
+  }
+
+  .xl\:focus\:pt-32:focus {
+    padding-top: 8rem;
+  }
+
+  .xl\:focus\:pr-32:focus {
+    padding-right: 8rem;
+  }
+
+  .xl\:focus\:pb-32:focus {
+    padding-bottom: 8rem;
+  }
+
+  .xl\:focus\:pl-32:focus {
+    padding-left: 8rem;
+  }
+
+  .xl\:focus\:pt-px:focus {
+    padding-top: 1px;
+  }
+
+  .xl\:focus\:pr-px:focus {
+    padding-right: 1px;
+  }
+
+  .xl\:focus\:pb-px:focus {
+    padding-bottom: 1px;
+  }
+
+  .xl\:focus\:pl-px:focus {
+    padding-left: 1px;
+  }
+
+  .xl\:focus\:pt-2px:focus {
+    padding-top: 2px;
+  }
+
+  .xl\:focus\:pr-2px:focus {
+    padding-right: 2px;
+  }
+
+  .xl\:focus\:pb-2px:focus {
+    padding-bottom: 2px;
+  }
+
+  .xl\:focus\:pl-2px:focus {
+    padding-left: 2px;
+  }
+
+  .xl\:focus\:pt-2p5:focus {
+    padding-top: .625rem;
+  }
+
+  .xl\:focus\:pr-2p5:focus {
+    padding-right: .625rem;
+  }
+
+  .xl\:focus\:pb-2p5:focus {
+    padding-bottom: .625rem;
+  }
+
+  .xl\:focus\:pl-2p5:focus {
+    padding-left: .625rem;
+  }
+
+  .xl\:focus-within\:p-0:focus-within {
+    padding: 0;
+  }
+
+  .xl\:focus-within\:p-1:focus-within {
+    padding: .25rem;
+  }
+
+  .xl\:focus-within\:p-2:focus-within {
+    padding: .5rem;
+  }
+
+  .xl\:focus-within\:p-3:focus-within {
+    padding: .75rem;
+  }
+
+  .xl\:focus-within\:p-4:focus-within {
+    padding: 1rem;
+  }
+
+  .xl\:focus-within\:p-5:focus-within {
+    padding: 1.25rem;
+  }
+
+  .xl\:focus-within\:p-6:focus-within {
+    padding: 1.5rem;
+  }
+
+  .xl\:focus-within\:p-8:focus-within {
+    padding: 2rem;
+  }
+
+  .xl\:focus-within\:p-10:focus-within {
+    padding: 2.5rem;
+  }
+
+  .xl\:focus-within\:p-12:focus-within {
+    padding: 3rem;
+  }
+
+  .xl\:focus-within\:p-16:focus-within {
+    padding: 4rem;
+  }
+
+  .xl\:focus-within\:p-20:focus-within {
+    padding: 5rem;
+  }
+
+  .xl\:focus-within\:p-24:focus-within {
+    padding: 6rem;
+  }
+
+  .xl\:focus-within\:p-32:focus-within {
+    padding: 8rem;
+  }
+
+  .xl\:focus-within\:p-px:focus-within {
+    padding: 1px;
+  }
+
+  .xl\:focus-within\:p-2px:focus-within {
+    padding: 2px;
+  }
+
+  .xl\:focus-within\:p-2p5:focus-within {
+    padding: .625rem;
+  }
+
+  .xl\:focus-within\:py-0:focus-within {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .xl\:focus-within\:px-0:focus-within {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .xl\:focus-within\:py-1:focus-within {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+
+  .xl\:focus-within\:px-1:focus-within {
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+
+  .xl\:focus-within\:py-2:focus-within {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .xl\:focus-within\:px-2:focus-within {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .xl\:focus-within\:py-3:focus-within {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .xl\:focus-within\:px-3:focus-within {
+    padding-left: .75rem;
+    padding-right: .75rem;
+  }
+
+  .xl\:focus-within\:py-4:focus-within {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .xl\:focus-within\:px-4:focus-within {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .xl\:focus-within\:py-5:focus-within {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .xl\:focus-within\:px-5:focus-within {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .xl\:focus-within\:py-6:focus-within {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:focus-within\:px-6:focus-within {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .xl\:focus-within\:py-8:focus-within {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .xl\:focus-within\:px-8:focus-within {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .xl\:focus-within\:py-10:focus-within {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .xl\:focus-within\:px-10:focus-within {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .xl\:focus-within\:py-12:focus-within {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .xl\:focus-within\:px-12:focus-within {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .xl\:focus-within\:py-16:focus-within {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .xl\:focus-within\:px-16:focus-within {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xl\:focus-within\:py-20:focus-within {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .xl\:focus-within\:px-20:focus-within {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .xl\:focus-within\:py-24:focus-within {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .xl\:focus-within\:px-24:focus-within {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .xl\:focus-within\:py-32:focus-within {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .xl\:focus-within\:px-32:focus-within {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .xl\:focus-within\:py-px:focus-within {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .xl\:focus-within\:px-px:focus-within {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .xl\:focus-within\:py-2px:focus-within {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  .xl\:focus-within\:px-2px:focus-within {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .xl\:focus-within\:py-2p5:focus-within {
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+  }
+
+  .xl\:focus-within\:px-2p5:focus-within {
+    padding-left: .625rem;
+    padding-right: .625rem;
+  }
+
+  .xl\:focus-within\:pt-0:focus-within {
+    padding-top: 0;
+  }
+
+  .xl\:focus-within\:pr-0:focus-within {
+    padding-right: 0;
+  }
+
+  .xl\:focus-within\:pb-0:focus-within {
+    padding-bottom: 0;
+  }
+
+  .xl\:focus-within\:pl-0:focus-within {
+    padding-left: 0;
+  }
+
+  .xl\:focus-within\:pt-1:focus-within {
+    padding-top: .25rem;
+  }
+
+  .xl\:focus-within\:pr-1:focus-within {
+    padding-right: .25rem;
+  }
+
+  .xl\:focus-within\:pb-1:focus-within {
+    padding-bottom: .25rem;
+  }
+
+  .xl\:focus-within\:pl-1:focus-within {
+    padding-left: .25rem;
+  }
+
+  .xl\:focus-within\:pt-2:focus-within {
+    padding-top: .5rem;
+  }
+
+  .xl\:focus-within\:pr-2:focus-within {
+    padding-right: .5rem;
+  }
+
+  .xl\:focus-within\:pb-2:focus-within {
+    padding-bottom: .5rem;
+  }
+
+  .xl\:focus-within\:pl-2:focus-within {
+    padding-left: .5rem;
+  }
+
+  .xl\:focus-within\:pt-3:focus-within {
+    padding-top: .75rem;
+  }
+
+  .xl\:focus-within\:pr-3:focus-within {
+    padding-right: .75rem;
+  }
+
+  .xl\:focus-within\:pb-3:focus-within {
+    padding-bottom: .75rem;
+  }
+
+  .xl\:focus-within\:pl-3:focus-within {
+    padding-left: .75rem;
+  }
+
+  .xl\:focus-within\:pt-4:focus-within {
+    padding-top: 1rem;
+  }
+
+  .xl\:focus-within\:pr-4:focus-within {
+    padding-right: 1rem;
+  }
+
+  .xl\:focus-within\:pb-4:focus-within {
+    padding-bottom: 1rem;
+  }
+
+  .xl\:focus-within\:pl-4:focus-within {
+    padding-left: 1rem;
+  }
+
+  .xl\:focus-within\:pt-5:focus-within {
+    padding-top: 1.25rem;
+  }
+
+  .xl\:focus-within\:pr-5:focus-within {
+    padding-right: 1.25rem;
+  }
+
+  .xl\:focus-within\:pb-5:focus-within {
+    padding-bottom: 1.25rem;
+  }
+
+  .xl\:focus-within\:pl-5:focus-within {
+    padding-left: 1.25rem;
+  }
+
+  .xl\:focus-within\:pt-6:focus-within {
+    padding-top: 1.5rem;
+  }
+
+  .xl\:focus-within\:pr-6:focus-within {
+    padding-right: 1.5rem;
+  }
+
+  .xl\:focus-within\:pb-6:focus-within {
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:focus-within\:pl-6:focus-within {
+    padding-left: 1.5rem;
+  }
+
+  .xl\:focus-within\:pt-8:focus-within {
+    padding-top: 2rem;
+  }
+
+  .xl\:focus-within\:pr-8:focus-within {
+    padding-right: 2rem;
+  }
+
+  .xl\:focus-within\:pb-8:focus-within {
+    padding-bottom: 2rem;
+  }
+
+  .xl\:focus-within\:pl-8:focus-within {
+    padding-left: 2rem;
+  }
+
+  .xl\:focus-within\:pt-10:focus-within {
+    padding-top: 2.5rem;
+  }
+
+  .xl\:focus-within\:pr-10:focus-within {
+    padding-right: 2.5rem;
+  }
+
+  .xl\:focus-within\:pb-10:focus-within {
+    padding-bottom: 2.5rem;
+  }
+
+  .xl\:focus-within\:pl-10:focus-within {
+    padding-left: 2.5rem;
+  }
+
+  .xl\:focus-within\:pt-12:focus-within {
+    padding-top: 3rem;
+  }
+
+  .xl\:focus-within\:pr-12:focus-within {
+    padding-right: 3rem;
+  }
+
+  .xl\:focus-within\:pb-12:focus-within {
+    padding-bottom: 3rem;
+  }
+
+  .xl\:focus-within\:pl-12:focus-within {
+    padding-left: 3rem;
+  }
+
+  .xl\:focus-within\:pt-16:focus-within {
+    padding-top: 4rem;
+  }
+
+  .xl\:focus-within\:pr-16:focus-within {
+    padding-right: 4rem;
+  }
+
+  .xl\:focus-within\:pb-16:focus-within {
+    padding-bottom: 4rem;
+  }
+
+  .xl\:focus-within\:pl-16:focus-within {
+    padding-left: 4rem;
+  }
+
+  .xl\:focus-within\:pt-20:focus-within {
+    padding-top: 5rem;
+  }
+
+  .xl\:focus-within\:pr-20:focus-within {
+    padding-right: 5rem;
+  }
+
+  .xl\:focus-within\:pb-20:focus-within {
+    padding-bottom: 5rem;
+  }
+
+  .xl\:focus-within\:pl-20:focus-within {
+    padding-left: 5rem;
+  }
+
+  .xl\:focus-within\:pt-24:focus-within {
+    padding-top: 6rem;
+  }
+
+  .xl\:focus-within\:pr-24:focus-within {
+    padding-right: 6rem;
+  }
+
+  .xl\:focus-within\:pb-24:focus-within {
+    padding-bottom: 6rem;
+  }
+
+  .xl\:focus-within\:pl-24:focus-within {
+    padding-left: 6rem;
+  }
+
+  .xl\:focus-within\:pt-32:focus-within {
+    padding-top: 8rem;
+  }
+
+  .xl\:focus-within\:pr-32:focus-within {
+    padding-right: 8rem;
+  }
+
+  .xl\:focus-within\:pb-32:focus-within {
+    padding-bottom: 8rem;
+  }
+
+  .xl\:focus-within\:pl-32:focus-within {
+    padding-left: 8rem;
+  }
+
+  .xl\:focus-within\:pt-px:focus-within {
+    padding-top: 1px;
+  }
+
+  .xl\:focus-within\:pr-px:focus-within {
+    padding-right: 1px;
+  }
+
+  .xl\:focus-within\:pb-px:focus-within {
+    padding-bottom: 1px;
+  }
+
+  .xl\:focus-within\:pl-px:focus-within {
+    padding-left: 1px;
+  }
+
+  .xl\:focus-within\:pt-2px:focus-within {
+    padding-top: 2px;
+  }
+
+  .xl\:focus-within\:pr-2px:focus-within {
+    padding-right: 2px;
+  }
+
+  .xl\:focus-within\:pb-2px:focus-within {
+    padding-bottom: 2px;
+  }
+
+  .xl\:focus-within\:pl-2px:focus-within {
+    padding-left: 2px;
+  }
+
+  .xl\:focus-within\:pt-2p5:focus-within {
+    padding-top: .625rem;
+  }
+
+  .xl\:focus-within\:pr-2p5:focus-within {
+    padding-right: .625rem;
+  }
+
+  .xl\:focus-within\:pb-2p5:focus-within {
+    padding-bottom: .625rem;
+  }
+
+  .xl\:focus-within\:pl-2p5:focus-within {
+    padding-left: .625rem;
   }
 
   .xl\:pointer-events-none {
