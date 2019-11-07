@@ -104,23 +104,31 @@ title: Hey there, I'm Jack!
 
             <div class="md:flex mb-12" id="contact">
                 <div class="w-full md:w-1/2 py-8 px-4 lg:px-8 items-center flex text-grey-darker text-xl lg:text-3xl text-center">
-                    <p>Born in London but currently making my home in <span class="font-bold"><i class="fas fa-map-marker-alt"></i> Gilroy, California</span>. You can find me sharing my thoughts on <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://twitter.com/jckprry" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>, cats & coffee on <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://www.instagram.com/jackperry/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>, and living that developer life on <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://github.com/jackperry" target="_blank"><i class="fab fa-github-alt"></i> GitHub</a> and <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://dev.to/jck" target="_blank"><i class="fab fa-dev"></i> DEV</a>.</p>
+                    <p>Born in London but currently making my home in <span class="font-bold"><i class="la la-home"></i> Gilroy, California</span>. You can find me sharing my thoughts on <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://twitter.com/jckprry" target="_blank"><i class="lab la-twitter"></i> Twitter</a>, cats & coffee on <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://www.instagram.com/jackperry/" target="_blank"><i class="lab la-instagram"></i> Instagram</a>, and living my developer life on <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://github.com/jackperry" target="_blank"><i class="lab la-github-alt"></i> GitHub</a> and <a class="text-grey-darker font-bold hover:text-nd-gradient" href="https://dev.to/jck" target="_blank"><i class="lab la-dev"></i> DEV</a>.</p>
                 </div>
                 <div class="w-full md:w-1/2 bg-grey-lightest shadow rounded-lg p-8">
                     <h2>Get In Touch</h2>
 
                     <div class="hidden bg-green-lightest border border-green-light text-green-dark px-4 py-3 rounded" id="form-success" role="alert"><strong>Thanks for your message.</strong> I usually respond within 48 hours, so you should hear from me soon!</div>
 
-                    <form name="Contact" id="contact-form" method="POST" data-netlify="true">
+                    <form name="Contact" id="contact-form" method="POST" data-netlify="true" novalidate>
                         <label class="block text-sm font-bold uppercase mb-2 px-0" for="name">What's your name?</label>
-                        <span class="inline-block rounded p-2px focus-input-gradient w-full lg:w-3/4"><input class="block bg-white shadow-sm appearance-none border-2 border-transparent outline-none w-full rounded py-2 px-4 text-grey-darkest" name="name" placeholder="Your Name" type="text"></span>
+                        <span class="inline-block rounded p-2px focus-input-gradient w-full lg:w-3/4">
+                            <input class="block bg-white shadow-sm appearance-none border-2 border-transparent outline-none w-full rounded py-2 px-4 text-grey-darkest" name="name" placeholder="Your Name" type="text" required>
+                        </span>
+                        <div class="hidden text-red text-sm px-4 pt-1 font-bold">No really, what can I call you?</div>
 
                         <label class="block text-sm font-bold uppercase mb-2 mt-6 px-0" for="email">How about your email?</label>
-                        <span class="inline-block rounded p-2px focus-input-gradient w-full lg:w-4/5"><input class="block bg-white shadow-sm appearance-none border-2 border-transparent outline-none w-full rounded py-2 px-4 text-grey-darkest" name="email" placeholder="Your Email" type="email"></span>
+                        <span class="inline-block rounded p-2px focus-input-gradient w-full lg:w-4/5">
+                            <input class="block bg-white shadow-sm appearance-none border-2 border-transparent outline-none w-full rounded py-2 px-4 text-grey-darkest" name="email" placeholder="Your Email" type="email" required>
+                        </span>
+                        <div class="hidden text-red text-sm px-4 pt-1 font-bold">Gonna need a real email address...</div>
 
                         <label class="block text-sm font-bold uppercase mb-2 mt-6 px-0" for="message">So, what can I do for you?</label>
-                        <span class="inline-block rounded p-2px focus-within:pb-0 focus-input-gradient w-full">
-                        <textarea rows="5" class="bg-white shadow-sm appearance-none border-0 border-transparent outline-none w-full rounded py-2 focus:pb-2p5 px-4 text-grey-darkest" name="message" placeholder="A message, perhaps..."></textarea></span>
+                        <span class="inline-block rounded p-2px gradient-border-fix focus-within:pb-0 focus-input-gradient w-full">
+                            <textarea rows="5" class="bg-white shadow-sm appearance-none border-0 border-transparent outline-none w-full rounded py-2 focus:pb-2p5 px-4 text-grey-darkest" name="message" placeholder="Your Message" required></textarea>
+                        </span>
+                        <div class="hidden text-red text-sm px-4 pt-1 font-bold">Even just hello is fine!</div>
 
                         <button type="submit" class="btn rounded mt-4 text-sm uppercase py-3 px-6 shadow hover:shadow-md w-full text-white bg-nd-gradient hover:bg-nd-gradient-reverse font-bold">Send it my way!</button>
                     </form>
