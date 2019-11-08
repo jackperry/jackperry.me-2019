@@ -4070,13 +4070,14 @@ $('#contact-form input, #contact-form select, #contact-form textarea').on('blur'
 });
 $("#contact-form").submit(function (e) {
   e.preventDefault();
-  var form = $(this);
-  var validForm = validateForm(form);
+  var $form = $(this);
+  var validForm = validateForm($form);
+  console.log(validForm);
 
   if (validForm) {
-    form.slideUp();
+    $form.slideUp();
     $('#form-loading').fadeIn();
-    $.post(form.attr("action"), form.serialize()).then(function () {
+    $.post($form.attr("action"), $form.serialize()).then(function () {
       $('#form-loading').fadeOut('slow', function () {
         $('#form-success').fadeIn();
       });
