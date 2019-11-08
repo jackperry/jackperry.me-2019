@@ -201,7 +201,8 @@ gulp.task('css:compile:preflight', function () {
                     'h3',
                     'p',
                     'blockquote',
-                    'intro'
+                    'intro',
+                    '.error-input-gradient',
                 ],
             })
         ]))
