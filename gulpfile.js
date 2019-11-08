@@ -202,7 +202,7 @@ gulp.task('css:compile:preflight', function () {
                     'p',
                     'blockquote',
                     'intro',
-                    '.error-input-gradient',
+                    'error-input-gradient',
                 ],
             })
         ]))

@@ -494,6 +494,18 @@ form input:before {
   padding-bottom: 0;
 }
 
+.focus-input-gradient.error-input-gradient {
+  background-image: linear-gradient(135deg, #cc1f1a, #e3342f);
+}
+
+.focus-input-gradient.error-input-gradient textarea {
+  padding-bottom: .625rem;
+}
+
+.focus-input-gradient.error-input-gradient + .hidden {
+  display: block;
+}
+
 .container {
   width: 100%;
 }
